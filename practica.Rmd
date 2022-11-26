@@ -1,0 +1,26 @@
+---
+title: "Practica"
+output: pdf_document
+date: "2022-11-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Inicializacion
+
+Cargo el pacquete rjson para luego carga los articulos
+```{r instalar_rjson}
+if (! require('rjson')){
+  !install.packages('rjson');
+}
+library('rjson');
+```
+
+Cargo el json con los articulos (durante las pruebas el reducido)
+```{r cargar_json}
+
+
+```
+
