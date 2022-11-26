@@ -20,7 +20,12 @@ library('rjson');
 
 Cargo el json con los articulos (durante las pruebas el reducido)
 ```{r cargar_json}
-
+f = fromJSON(file = 'reduced_article_list.json');
+ids = unlist(lapply(f$articles, function (x) x$id ));
+titulos = unlist(lapply(f$articles, function (x) x$title ));
+ano = unlist(lapply(f$articles, function (x) x$year ));
+texto = unlist(lapply(f$articles, function (x) x$abstractText ));
+df = data.frame(ids,titulos,ano,texto);
 
 ```
 
