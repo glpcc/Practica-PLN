@@ -28,4 +28,12 @@ texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,titulos,ano,texto);
 
 ```
+Ahora lo que vamos a hacer es buscar los afijos que nos sirvan para clasificar.
 
+```{r busqueda}
+library(stringr)
+dolores = str_extract_all(df$texto, "\\w*algia")
+alteraciones = str_extract_all(df$texto, "hiper\\w* | hipo\\w*")
+infecciones = str_extract_all(df$texto, "\\w*itis")
+cancer = str_extract_all(df$texto, "\\w*oma")
+```
