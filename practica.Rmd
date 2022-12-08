@@ -28,6 +28,7 @@ texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,titulos,ano,texto)
 
 ```
+Ahora lo que vamos a hacer es buscar los afijos que nos sirvan para clasificar.
 
 Test udpipe
 ```{r}
