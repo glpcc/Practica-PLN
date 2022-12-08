@@ -94,3 +94,37 @@ print(Sys.time() - a)
 enfermedades
 ```
 
+Separamos las palabras compuestas para que el diccionario pueda buscarlas.
+
+```{r separar}
+enfermedades2 = c()
+for (i in 1:length(enfermedades)){
+  enfermedades2[i] = str_extract(enfermedades[i], "^\\w+")
+}
+enfermedades2
+```
+
+Hacemos la búsqueda en el diccionario médico para verificar
+
+```{r buscador, warning=FALSE}
+library(stringi)
+urls = c()
+enfermedades3 = c()
+for (i in 1:length(enfermedades)){
+  url = "https://www.cun.es/diccionario-medico/terminos/"
+  urlOK = paste(url, enfermedades2[i])
+  urlOK = stri_replace_all_regex(urlOK, c(" ", "á", "é", "í", "ó", "ú"), c("", "a", "e", "i", "o", "u"), vectorize_all = FALSE)
+  urls[i] = urlOK
+  tryCatch(
+  {
+    lines = readLines(con=urlOK, warn = FALSE)
+    enfermedades3 = c(enfermedades, enfermedades[i])
+  },
+  error=function(cond){
+    message(paste("URL no existe:", urlOK))
+    return(NA)
+  }
+)
+}
+enfermedades3
+```
