@@ -118,7 +118,7 @@ for (i in 1:length(enfermedades)){
   tryCatch(
   {
     lines = readLines(con=urlOK, warn = FALSE)
-    enfermedades3 = c(enfermedades, enfermedades[i])
+    enfermedades3 = c(enfermedades3, enfermedades[i])
   },
   error=function(cond){
     message(paste("URL no existe:", urlOK))
