@@ -20,12 +20,76 @@ library('rjson');
 
 Cargo el json con los articulos (durante las pruebas el reducido)
 ```{r cargar_json}
-f = fromJSON(file = 'reduced_article_list.json');
+f = fromJSON(file = 'reduced_article_list2.json');
 ids = unlist(lapply(f$articles, function (x) x$id ));
 titulos = unlist(lapply(f$articles, function (x) x$title ));
 ano = unlist(lapply(f$articles, function (x) x$year ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
-df = data.frame(ids,titulos,ano,texto);
+df = data.frame(ids,titulos,ano,texto)
 
+```
+
+Test udpipe
+```{r}
+library(udpipe)
+# udpipe_download_model(language = "spanish-ancora") #"spanish-ancora" or "spanish-gsd"
+#Descarga "spanish-ancora-ud-2.5-191206.udpipe"
+udmodel_es<-udpipe_load_model(file = 'spanish-ancora-ud-2.5-191206.udpipe');
+```
+
+```{r}
+test = as.data.frame(udpipe_annotate(udmodel_es,'Mi perro tiene conjuntibitis severa en los ojos'))
+```
+
+Test conseguir enfermedades
+```{r}
+library(stringr)
+```
+
+
+```{r}
+# Modo texto a texto
+a = Sys.time()
+enfermedades = c();
+for (texto in df$texto){
+  texto_analizado = as.data.frame(udpipe_annotate(udmodel_es,texto));
+  posibles_enfermedades = str_detect(texto_analizado$token,regex('.*?itis$|.*?oma$|.*?algia$|^hipo.*|^hiper.*'))
+  for (j in 1:nrow(texto_analizado)){
+    if (texto_analizado$upos[[j]] == 'NOUN' & posibles_enfermedades[[j]]){
+      if (texto_analizado$dep_rel[[j+1]] == 'amod'){
+        # print(paste(texto_analizado$token[[j]], texto_analizado$token[[j+1]],sep = " "))
+        enfermedades = c(enfermedades,paste(texto_analizado$token[[j]], texto_analizado$token[[j+1]],sep = " ") )
+      }else{
+        # print(texto_analizado$token[[j]])
+        enfermedades = c(enfermedades,texto_analizado$token[[j]])
+      }
+    }
+  }
+}
+enfermedades = unique(enfermedades)
+print(Sys.time() - a)
+enfermedades
+```
+
+```{r}
+# Modo dataframe entero
+a = Sys.time()
+enfermedades = c();
+test = as.data.frame(udpipe_annotate(udmodel_es,df$texto))
+posibles_enfermedades = str_detect(test$token,regex('.*?itis$|.*?oma$|.*?algia$|^hipo.*|^hiper.*'))
+for (j in 1:nrow(test)){
+  if (test$upos[[j]] == 'NOUN' & posibles_enfermedades[[j]]){
+    if (test$dep_rel[[j+1]] == 'amod'){
+      # print(paste(texto_analizado$token[[j]], texto_analizado$token[[j+1]],sep = " "))
+      enfermedades = c(enfermedades,paste(test$token[[j]], test$token[[j+1]],sep = " ") )
+    }else{
+      # print(texto_analizado$token[[j]])
+      enfermedades = c(enfermedades,test$token[[j]])
+    }
+  }
+}
+enfermedades = unique(enfermedades)
+print(Sys.time() - a)
+enfermedades
 ```
 
