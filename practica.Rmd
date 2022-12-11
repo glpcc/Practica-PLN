@@ -128,3 +128,14 @@ for (i in 1:length(enfermedades)){
 }
 enfermedades3
 ```
+Una vez que ya tenemos las enfermedades buscadas en el diccionario, vamos a lematizarlas. Para ello, primero vamos a inicializar spacyR.
+```{r inicio, warning=FALSE, message=FALSE}
+library(spacyr)
+spacy_initialize(model = "es_core_news_sm")
+```
+
+Una vez inicializado, vamos a lematizar:
+```{r lema}
+res <- spacy_parse(enfermedades3, pos = FALSE, lemma = TRUE, entity = FALSE)
+res[, c("token", "lemma")]
+```
