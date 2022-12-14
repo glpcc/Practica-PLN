@@ -26,7 +26,6 @@ titulos = unlist(lapply(f$articles, function (x) x$title ));
 ano = unlist(lapply(f$articles, function (x) x$year ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,titulos,ano,texto)
-
 ```
 Ahora lo que vamos a hacer es buscar los afijos que nos sirvan para clasificar.
 
@@ -109,6 +108,7 @@ Hacemos la búsqueda en el diccionario médico para verificar
 ```{r buscador, warning=FALSE}
 library(stringi)
 urls = c()
+valid_urls = c()
 enfermedades3 = c()
 for (i in 1:length(enfermedades)){
   url = "https://www.cun.es/diccionario-medico/terminos/"
@@ -119,6 +119,7 @@ for (i in 1:length(enfermedades)){
   {
     lines = readLines(con=urlOK, warn = FALSE)
     enfermedades3 = c(enfermedades3, enfermedades[i])
+    valid_urls = c(valid_urls, urlOK)
   },
   error=function(cond){
     message(paste("URL no existe:", urlOK))
@@ -138,4 +139,26 @@ Una vez inicializado, vamos a lematizar:
 ```{r lema}
 res <- spacy_parse(enfermedades3, pos = FALSE, lemma = TRUE, entity = FALSE)
 res[, c("token", "lemma")]
+```
+```{r}
+url_base = "https://www.cun.es/diccionario-medico/terminos/"
+definiciones = c()
+for (i in 1:length(valid_urls)){
+  lines = readLines(valid_urls[i],
+encoding = "UTF-8")
+  definicion = lines[891]
+  tildes1 <- gsub('&aacute;', 'á', definicion)
+tildes2 <- gsub('&eacute;', 'é', tildes1)
+tildes3 <- gsub('&iacute;', 'í', tildes2)
+tildes4 <- gsub('&oacute;', 'ó', tildes3)
+tildes5 <- gsub('&uacute;', 'ú', tildes4)
+eñes <- gsub('&ntilde;', 'ñ', tildes5)
+eñes1 <- gsub('&Ntilde;', 'Ñ', eñes)
+quest <- gsub('&iquest;', '¿', eñes1)
+excl <- gsub('&iexcl;', '¡', quest)
+espacios <- trimws(excl)
+definicionOK<- stri_replace_all_regex(espacios, '<.*?>', '', vectorize_all = FALSE)
+  definiciones = c(definiciones, definicionOK)
+}
+names(definiciones) = enfermedades3
 ```
