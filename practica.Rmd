@@ -136,11 +136,8 @@ spacy_initialize(model = "es_core_news_sm")
 ```
 Una vez inicializado, vamos a lematizar. Para lematizar, spacy_parse no acaba de lematizar bien, por tanto para sacar la forma invariable de las enfermedades, vamos a quitar los prefijos y sufijos.
 ```{r lema}
-cambio1 <- gsub("hipo","", enfermedades3)
-cambio2 <- gsub("hiper","", cambio1)
-cambio3 <- gsub("algia", "", cambio2)
-cambio4 <- gsub("itis","",cambio3)
-form_invariable <- gsub("oma","", cambio4)
+forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia|algia|oma","")
+
 ```
 
 ```{r 2}
@@ -148,23 +145,41 @@ res <- spacy_parse(form_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
 res[, c("token", "lemma")]
 ```
 ```{r}
+limpiaBloquesConTrim <- function(vec_cadenas){
+a <- gsub("<[^<>]*>", "", vec_cadenas)
+trimws(a)}
+
+reemplazaElemsHTML <- function(vec_cadenas){
+traduc <- list(c("&aacute;", "á"),
+c("&Aacute;", "Á"),
+c("&eacute;", "e"),
+c("&Eacute;", "É"),
+c("&iacute;", "í"),
+c("&Iacute;", "Í"),
+c("&oacute;", "ó"),
+c("&Oacute;", "Ó"),
+c("&uacute;", "ú"),
+c("&Uacute;", "Ú"),
+c("&ntilde;", "ñ"),
+c("&Ntilde;", "Ñ"),
+c("&iquest;", "¿"),
+c("&iexcl;", "¡"),
+c("&laquo;", "«"),
+c("&raquo;", "»")
+)
+stri_replace_all_regex(vec_cadenas,
+pattern=unlist(lapply(traduc, function(x){x[1]})),
+replacement=unlist(lapply(traduc, function(x){x[2]})),
+vectorize=FALSE)
+}
 url_base = "https://www.cun.es/diccionario-medico/terminos/"
 definiciones = c()
 for (i in 1:length(valid_urls)){
   lines = readLines(valid_urls[i],
 encoding = "UTF-8")
   definicion = lines[891]
-  tildes1 <- gsub('&aacute;', 'á', definicion)
-tildes2 <- gsub('&eacute;', 'é', tildes1)
-tildes3 <- gsub('&iacute;', 'í', tildes2)
-tildes4 <- gsub('&oacute;', 'ó', tildes3)
-tildes5 <- gsub('&uacute;', 'ú', tildes4)
-eñes <- gsub('&ntilde;', 'ñ', tildes5)
-eñes1 <- gsub('&Ntilde;', 'Ñ', eñes)
-quest <- gsub('&iquest;', '¿', eñes1)
-excl <- gsub('&iexcl;', '¡', quest)
-espacios <- trimws(excl)
-definicionOK<- stri_replace_all_regex(espacios, '<.*?>', '', vectorize_all = FALSE)
+  definicion <- limpiaBloquesConTrim(lines[891])
+  definicionOK <- reemplazaElemsHTML(definicion)
   definiciones = c(definiciones, definicionOK)
 }
 names(definiciones) = enfermedades3
