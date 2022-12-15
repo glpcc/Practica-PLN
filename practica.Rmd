@@ -134,10 +134,17 @@ Una vez que ya tenemos las enfermedades buscadas en el diccionario, vamos a lema
 library(spacyr)
 spacy_initialize(model = "es_core_news_sm")
 ```
-
-Una vez inicializado, vamos a lematizar:
+Una vez inicializado, vamos a lematizar. Para lematizar, spacy_parse no acaba de lematizar bien, por tanto para sacar la forma invariable de las enfermedades, vamos a quitar los prefijos y sufijos.
 ```{r lema}
-res <- spacy_parse(enfermedades3, pos = FALSE, lemma = TRUE, entity = FALSE)
+cambio1 <- gsub("hipo","", enfermedades3)
+cambio2 <- gsub("hiper","", cambio1)
+cambio3 <- gsub("algia", "", cambio2)
+cambio4 <- gsub("itis","",cambio3)
+form_invariable <- gsub("oma","", cambio4)
+```
+
+```{r 2}
+res <- spacy_parse(form_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
 res[, c("token", "lemma")]
 ```
 ```{r}
