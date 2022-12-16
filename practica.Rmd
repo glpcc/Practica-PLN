@@ -141,7 +141,7 @@ forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia
 ```
 
 ```{r 2}
-res <- spacy_parse(form_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
+res <- spacy_parse(forma_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
 res[, c("token", "lemma")]
 ```
 ```{r}
