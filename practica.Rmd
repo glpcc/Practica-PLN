@@ -202,7 +202,7 @@ con1 <- file(
   encoding = "UTF-8")
 
 for (i in 1:length(definiciones)){
-  definicionFinal = paste(names(definiciones[i]), ":", definiciones[i], sep="")
+  definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], sep="")
   writeLines(definicionFinal, con1)
   variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
   if (length(variaciones) > 1){
