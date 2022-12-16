@@ -68,6 +68,7 @@ for (texto in df$texto){
 }
 enfermedades = unique(enfermedades)
 print(Sys.time() - a)
+enfermedades = sort(enfermedades)
 enfermedades
 ```
 
@@ -90,6 +91,7 @@ for (j in 1:nrow(test)){
 }
 enfermedades = unique(enfermedades)
 print(Sys.time() - a)
+enfermedades = sort(enfermedades)
 enfermedades
 ```
 
@@ -127,10 +129,11 @@ for (i in 1:length(enfermedades)){
   }
 )
 }
-enfermedades3 = sort(enfermedades3)
 enfermedades3
 ```
+
 Una vez que ya tenemos las enfermedades buscadas en el diccionario, vamos a lematizarlas. Para ello, primero vamos a inicializar spacyR.
+
 ```{r inicio, warning=FALSE, message=FALSE}
 library(spacyr)
 spacy_initialize(model = "es_core_news_sm")
