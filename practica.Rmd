@@ -142,13 +142,24 @@ spacy_initialize(model = "es_core_news_sm")
 ```
 Una vez inicializado, vamos a lematizar. Para lematizar, spacy_parse no acaba de lematizar bien, por tanto para sacar la forma invariable de las enfermedades, vamos a quitar los prefijos y sufijos.
 ```{r lema}
+library(stringi)
 forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia|algia|oma","")
-
 ```
 
-```{r 2}
-res <- spacy_parse(forma_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
-res[, c("token", "lemma")]
+Vamos ahora a añadir todas las formas invariables a un archivo txt.
+
+```{r txt}
+con <- file(
+  description = "Formas_Invariables.txt",
+  open = "wt",
+  encoding = "UTF-8")
+
+for (i in 1:length(forma_invariable)){
+  final = paste("Forma invariable de ",enfermedades3[i], ": ", forma_invariable[i])
+  writeLines(final, con)
+  
+}
+close(con)
 ```
 
 ```{r, warning=FALSE}
@@ -195,7 +206,7 @@ names(definiciones) = enfermedades3
 
 Creamos un archivo de texto para introducir todas las definiciones.
 
-```{r txt}
+```{r txt2}
 con1 <- file(
   description = "Definiciones.txt",
   open = "wt",
@@ -214,4 +225,3 @@ for (i in 1:length(definiciones)){
 
 close(con1)
 ```
-
