@@ -127,6 +127,7 @@ for (i in 1:length(enfermedades)){
   }
 )
 }
+enfermedades3 = sort(enfermedades3)
 enfermedades3
 ```
 Una vez que ya tenemos las enfermedades buscadas en el diccionario, vamos a lematizarlas. Para ello, primero vamos a inicializar spacyR.
@@ -144,39 +145,41 @@ forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia
 res <- spacy_parse(forma_invariable, pos = FALSE, lemma = TRUE, entity = FALSE)
 res[, c("token", "lemma")]
 ```
-```{r}
+
+```{r, warning=FALSE}
 limpiaBloquesConTrim <- function(vec_cadenas){
 a <- gsub("<[^<>]*>", "", vec_cadenas)
 trimws(a)}
 
 reemplazaElemsHTML <- function(vec_cadenas){
 traduc <- list(c("&aacute;", "á"),
-c("&Aacute;", "Á"),
-c("&eacute;", "e"),
-c("&Eacute;", "É"),
-c("&iacute;", "í"),
-c("&Iacute;", "Í"),
-c("&oacute;", "ó"),
-c("&Oacute;", "Ó"),
-c("&uacute;", "ú"),
-c("&Uacute;", "Ú"),
-c("&ntilde;", "ñ"),
-c("&Ntilde;", "Ñ"),
-c("&iquest;", "¿"),
-c("&iexcl;", "¡"),
-c("&laquo;", "«"),
-c("&raquo;", "»")
-)
+               c("&Aacute;", "Á"),
+               c("&eacute;", "e"),
+               c("&Eacute;", "É"),
+               c("&iacute;", "í"),
+               c("&Iacute;", "Í"),
+               c("&oacute;", "ó"),
+               c("&Oacute;", "Ó"),
+               c("&uacute;", "ú"),
+               c("&Uacute;", "Ú"),
+               c("&ntilde;", "ñ"),
+               c("&Ntilde;", "Ñ"),
+               c("&iquest;", "¿"),
+               c("&iexcl;", "¡"),
+               c("&laquo;", "«"),
+               c("&raquo;", "»"))
+
 stri_replace_all_regex(vec_cadenas,
-pattern=unlist(lapply(traduc, function(x){x[1]})),
-replacement=unlist(lapply(traduc, function(x){x[2]})),
-vectorize=FALSE)
+                       pattern=unlist(lapply(traduc, function(x){x[1]})),
+                       replacement=unlist(lapply(traduc, function(x){x[2]})),
+                       vectorize=FALSE)
 }
+
 url_base = "https://www.cun.es/diccionario-medico/terminos/"
 definiciones = c()
 for (i in 1:length(valid_urls)){
   lines = readLines(valid_urls[i],
-encoding = "UTF-8")
+                    encoding = "UTF-8")
   definicion = lines[891]
   definicion <- limpiaBloquesConTrim(lines[891])
   definicionOK <- reemplazaElemsHTML(definicion)
@@ -184,3 +187,20 @@ encoding = "UTF-8")
 }
 names(definiciones) = enfermedades3
 ```
+
+Creamos un archivo de texto para introducir todas las definiciones.
+
+```{r txt}
+con1 <- file(
+  description = "Definiciones.txt",
+  open = "wt",
+  encoding = "UTF-8")
+
+for (i in 1:length(definiciones)){
+  definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], "\n", sep="")
+  writeLines(definicionFinal, con1)
+}
+
+close(con1)
+```
+
