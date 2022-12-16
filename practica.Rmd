@@ -102,6 +102,8 @@ enfermedades2 = c()
 for (i in 1:length(enfermedades)){
   enfermedades2[i] = str_extract(enfermedades[i], "^\\w+")
 }
+
+enfermedades2 = unique(enfermedades2)
 enfermedades2
 ```
 
@@ -112,7 +114,7 @@ library(stringi)
 urls = c()
 valid_urls = c()
 enfermedades3 = c()
-for (i in 1:length(enfermedades)){
+for (i in 1:length(enfermedades2)){
   url = "https://www.cun.es/diccionario-medico/terminos/"
   urlOK = paste(url, enfermedades2[i])
   urlOK = stri_replace_all_regex(urlOK, c(" ", "á", "é", "í", "ó", "ú"), c("", "a", "e", "i", "o", "u"), vectorize_all = FALSE)
@@ -120,7 +122,7 @@ for (i in 1:length(enfermedades)){
   tryCatch(
   {
     lines = readLines(con=urlOK, warn = FALSE)
-    enfermedades3 = c(enfermedades3, enfermedades[i])
+    enfermedades3 = c(enfermedades3, enfermedades2[i])
     valid_urls = c(valid_urls, urlOK)
   },
   error=function(cond){
@@ -200,8 +202,14 @@ con1 <- file(
   encoding = "UTF-8")
 
 for (i in 1:length(definiciones)){
-  definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], "\n", sep="")
+  definicionFinal = paste(names(definiciones[i]), ":", definiciones[i], sep="")
   writeLines(definicionFinal, con1)
+  variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
+  if (length(variaciones) > 1){
+    variaciones = paste("Variaciones: ", paste(as.character(variaciones), collapse = ", "))
+    writeLines(variaciones, con1)
+  }
+  writeLines("\n", con1)
 }
 
 close(con1)
