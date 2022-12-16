@@ -5,7 +5,7 @@ ascitis: f. Acumulación de líquido ascítico en la cavidad peritoneal. Se prod
 
 
 carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
-Variaciones:  carcinoma basocelular, carcinoma ductal, carcinoma escamoso, carcinoma metastásico, carcinoma tiroideo
+Variaciones: carcinoma basocelular, carcinoma ductal, carcinoma escamoso, carcinoma metastásico, carcinoma tiroideo
 
 
 colecistitis: f. Inflamación aguda, subaguda o crónica que afecta a la vesícula biliar. La causa más frecuente es la colelitiasis, que casi siempre se acompaña de signos histológicos de colecistitis crónica, y que es la causante del 95% de los casos de colecistitis aguda. El mecanismo de la colecistitis aguda es la distensión vesicular, por la obstrucción de la salida de la vesícula por un cálculo, lo que evoluciona a la inflamación con edema de la pared, a la infección de la bilis vesicular e incluso a la perforación vesicular con absceso o peritonitis biliar. La colecistitis aguda es una patología muy frecuente, cuyo mejor tratamiento es la colecistectomía. Ver colelitiasis.
@@ -45,7 +45,7 @@ hipoperfusión: f. Disminución del flujo de sangre que pasa por un órgano.
 
 
 hipoxemia: f. Estado o situación en que los valores en sangre arterial de la presión parcial de oxígeno están reducidos. Existen cuatro causas fundamentales de hipoxemia: hipoventilación alveolar, limitación de la difusión alveolocapilar de oxígeno, cortocircuitos arteriovenosos y desequilibrios en las relaciones de ventilación-perfusión del pulmón.
-Variaciones:  hipoxemia persistente, hipoxemia transitoria
+Variaciones: hipoxemia persistente, hipoxemia transitoria
 
 
 linfoma: m. Grupo heterogeneo y amplio de síndromes linfoproliferativos tumorales, con expansión clonal de una línea o sublínea linfoide, alterada por mecanismos que inciden en la transformación neoplásica de estas celulas. Los linfomas tienen una diversidad clínico evolutiva, así como diferentes criterios pronósticos y unas formas de comienzo ganglionar o extraganglionar. Son tumores muy sensibles a la quimioterapia y a la radioterapia, teniendo un importante potencial de curabilidad. La clasificación de los linfomas se basa fundamentalmente en la naturaleza de la celula linfoide proliferante. De esta manera los linfomas se clasifican en tres grandes grupos que incluyen los linfomas derivados de linfocitos B, de linfocitos T, y un grupo particular englobado bajo el concepto de linfoma o enfermedad de Hodgkin. Los linfomas de celulas B y T se subdividen a su vez en dos grandes grupos: 1) linfomas linfoblásticos originados en celulas linfoides inmaduras procedentes de los compartimentos centrales (medula ósea o timo) y 2) linfomas de celulas perifericas en los que proliferan celulas linfoides efectoras localizadas habitualmente en los compartimentos perifericos. En esta clasificación se incluyen conjuntamente procesos predominantemente leucemicos y linfomas. Este hecho se debe a que numerosos procesos linfoproliferativos pueden presentarse en forma leucemica, en forma de linfoma, o ambas, según el momento de su evolución. &gt; Saber más sobre el linfoma
@@ -61,7 +61,7 @@ pancreatitis: f. Inflamación del páncreas, que puede ser aguda o crónica. El 
 
 
 queratitis: f. Inflamación de la córnea.
-Variaciones:  queratitis asociados, queratitis causados
+Variaciones: queratitis asociados, queratitis causados
 
 
 síntoma: m. Dato subjetivo de enfermedad o situación del paciente. || Cualquier fenómeno anormal funcional o sensitivo, percibido por el enfermo, indicativo de una enfermedad. Convencionalmente, es opuesto a signo, anomalía perceptible por el observador.
