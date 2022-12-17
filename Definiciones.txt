@@ -1,0 +1,122 @@
+adenocarcinoma: f. Lesión tumoral maligna de naturaleza epitelial, con formación de estructuras glandulares reconocibles u originadas a partir de un epitelio glandular. Al igual que el adenoma (benigno), existen varios tipos según la estructura dominante.
+Tipo: Cáncer
+Forma invariable: adenocarcin
+
+
+ascitis: f. Acumulación de líquido ascítico en la cavidad peritoneal. Se produce cuando hay una inflamación del peritoneo o bien cuando aumenta la presión en el sistema de la vena porta.
+Tipo: Infección
+Forma invariable: asc
+
+
+carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
+Tipo: Cáncer
+Forma invariable: carcin
+Variaciones: carcinoma basocelular, carcinoma ductal, carcinoma escamoso, carcinoma metastásico, carcinoma tiroideo
+
+
+colecistitis: f. Inflamación aguda, subaguda o crónica que afecta a la vesícula biliar. La causa más frecuente es la colelitiasis, que casi siempre se acompaña de signos histológicos de colecistitis crónica, y que es la causante del 95% de los casos de colecistitis aguda. El mecanismo de la colecistitis aguda es la distensión vesicular, por la obstrucción de la salida de la vesícula por un cálculo, lo que evoluciona a la inflamación con edema de la pared, a la infección de la bilis vesicular e incluso a la perforación vesicular con absceso o peritonitis biliar. La colecistitis aguda es una patología muy frecuente, cuyo mejor tratamiento es la colecistectomía. Ver colelitiasis.
+Tipo: Infección
+Forma invariable: colecist
+
+
+enterocolitis: f. Inflamación aguda de los intestinos delgado y grueso, habitualmente infecciosa, que se manifiesta con inflamación de la mucosa, diarrea (a veces hemorrágica) y deshidratación. Raramente produce perforación intestinal (fiebre tifoidea, a veces salmonelosis graves).
+Tipo: Infección
+Forma invariable: enterocol
+
+
+estroma: m. Tejido de sosten del parenquima de un órgano.
+Tipo: Cáncer
+Forma invariable: estr
+
+
+gastritis: f. Inflamación de las capas más internas del estómago, sobre todo de la mucosa. Es uno de los trastornos más frecuentes del estómago. No existe una clasificación aceptada de forma universal. Se produce de forma aguda o crónica. Hay muchos tipos de gastritis: antral, erosiva, hemorrágica, autoinmune, corrosiva, flemonosa, hipertrófica, granulomatosa, por radiación, química, micótica, etc.
+Tipo: Infección
+Forma invariable: gastr
+
+
+hiperactividad: f. Actividad, anormalmente aumentada, que lleva, por lo general, a ir de una tarea a otra sin acabar ninguna. Es típica del síndrome hipercinetico de la infancia, de los trastornos maníacos y de algunas formas de esquizofrenia.
+Tipo: Alteración
+Forma invariable: actividad
+
+
+hiperplasia: f. Aumento cuantitativo de un tejido por un incremento del número de celulas que conservan su normalidad anatómica y funcional. Tambien se denomina hipertrofia numerica o hipergenesis.
+Tipo: Alteración
+Forma invariable: plasia
+
+
+hipertrofia: f. Aumento del tamaño de un órgano o tejido, secundario al aumento de tamaño de sus celulas constituyentes, generalmente es producto de la adaptación a sobrecargas funcionales, exigidas a dichos órganos. En los órganos huecos, como el corazón, la hipertrofia puede ser excentrica, con dilatación de la cavidad, o concentrica, sin dilatación de la cavidad.
+Tipo: Alteración
+Forma invariable: trofia
+
+
+hipoacusia: f. Disminución de la agudeza auditiva.
+Tipo: Alteración
+Forma invariable: acusia
+
+
+hipoalbuminemia: f. Nivel de albúmina en sangre por debajo de lo normal.
+Tipo: Alteración
+Forma invariable: albuminemia
+
+
+hipocalcemia: f. Disminución del contenido de calcio en el suero sanguíneo (&lt;&lt;8 mg/dl; &lt;&lt; de 4,5 mEq/l), se observa en el hipoparatiroidismo (quirúrgico, infiltrativo o idiopático), en el deficit de la vitamina D (por reducción del ingreso, de la absorción, o de la producción, o por aumento de esta vitamina en el metabolismo), en síndromes de malabsorción intestinal con esteatorrea (hipoalbuminemia) y en enfermedades renales crónicas que cursan con hiperfosforemia, hipomagnesemia, pancreatitis aguda, etc. Puede ser aguda (con riesgo vital) o crónica, y los síntomas principales son neuromusculares (tetania, convulsiones, miopatía, etc.), psiquiátricos (demencia, psicosis), oculares (catarata), cardiovasculares (hipotensión y alteraciones electroencefalográficas), etc.
+Tipo: Alteración
+Forma invariable: calcemia
+
+
+hipoglucemia: f. Nivel de glucosa en la sangre por debajo del que se admite como normal.
+Tipo: Alteración
+Forma invariable: glucemia
+
+
+hipoperfusión: f. Disminución del flujo de sangre que pasa por un órgano.
+Tipo: Alteración
+Forma invariable: perfusión
+
+
+hipopnea: f. Respiración lenta y superficial. En condiciones fisiológicas se da en sujetos que hacen abundante ejercicio muscular.
+Tipo: Alteración
+Forma invariable: pnea
+
+
+hipoxemia: f. Estado o situación en que los valores en sangre arterial de la presión parcial de oxígeno están reducidos. Existen cuatro causas fundamentales de hipoxemia: hipoventilación alveolar, limitación de la difusión alveolocapilar de oxígeno, cortocircuitos arteriovenosos y desequilibrios en las relaciones de ventilación-perfusión del pulmón.
+Tipo: Alteración
+Forma invariable: xemia
+Variaciones: hipoxemia persistente, hipoxemia transitoria
+
+
+linfoma: m. Grupo heterogeneo y amplio de síndromes linfoproliferativos tumorales, con expansión clonal de una línea o sublínea linfoide, alterada por mecanismos que inciden en la transformación neoplásica de estas celulas. Los linfomas tienen una diversidad clínico evolutiva, así como diferentes criterios pronósticos y unas formas de comienzo ganglionar o extraganglionar. Son tumores muy sensibles a la quimioterapia y a la radioterapia, teniendo un importante potencial de curabilidad. La clasificación de los linfomas se basa fundamentalmente en la naturaleza de la celula linfoide proliferante. De esta manera los linfomas se clasifican en tres grandes grupos que incluyen los linfomas derivados de linfocitos B, de linfocitos T, y un grupo particular englobado bajo el concepto de linfoma o enfermedad de Hodgkin. Los linfomas de celulas B y T se subdividen a su vez en dos grandes grupos: 1) linfomas linfoblásticos originados en celulas linfoides inmaduras procedentes de los compartimentos centrales (medula ósea o timo) y 2) linfomas de celulas perifericas en los que proliferan celulas linfoides efectoras localizadas habitualmente en los compartimentos perifericos. En esta clasificación se incluyen conjuntamente procesos predominantemente leucemicos y linfomas. Este hecho se debe a que numerosos procesos linfoproliferativos pueden presentarse en forma leucemica, en forma de linfoma, o ambas, según el momento de su evolución. &gt; Saber más sobre el linfoma
+Tipo: Cáncer
+Forma invariable: linf
+
+
+melanoma: m. Tumor maligno constituido por melanoblastos. Aparecen como manchas negras o marrones en la piel y mucosas. &gt; Saber más sobre el melanoma
+Tipo: Cáncer
+Forma invariable: melan
+
+
+neuroblastoma: m. Tumor producido por la proliferación de neuroblastos.
+Tipo: Cáncer
+Forma invariable: neuroblast
+
+
+pancreatitis: f. Inflamación del páncreas, que puede ser aguda o crónica. El cuadro agudo cursa con dolor epigástrico, vómitos, contractura abdominal y aumento de amilasa y lipasa. La afección crónica puede evolucionar hacia la fibrosis pancreática, dando lugar a una insuficiencia pancreática exocrina, y favorecer la aparición de diabetes mellitus.
+Tipo: Infección
+Forma invariable: pancreat
+
+
+queratitis: f. Inflamación de la córnea.
+Tipo: Infección
+Forma invariable: querat
+Variaciones: queratitis asociados, queratitis causados
+
+
+síntoma: m. Dato subjetivo de enfermedad o situación del paciente. || Cualquier fenómeno anormal funcional o sensitivo, percibido por el enfermo, indicativo de una enfermedad. Convencionalmente, es opuesto a signo, anomalía perceptible por el observador.
+Tipo: Cáncer
+Forma invariable: sínt
+
+
+vaginosis: f. Infección vaginal atípica, colonización, por distintos germenes como la Gardnerella vaginalis, que producen una leucorrea característica de color gris.
+Forma invariable: vaginosis
+
+

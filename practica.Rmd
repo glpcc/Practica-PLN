@@ -26,7 +26,6 @@ titulos = unlist(lapply(f$articles, function (x) x$title ));
 ano = unlist(lapply(f$articles, function (x) x$year ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,titulos,ano,texto)
-
 ```
 Ahora lo que vamos a hacer es buscar los afijos que nos sirvan para clasificar.
 
@@ -50,6 +49,7 @@ library(stringr)
 
 ```{r}
 # Modo texto a texto
+library(stringr)
 a = Sys.time()
 enfermedades = c();
 for (texto in df$texto){
@@ -69,6 +69,7 @@ for (texto in df$texto){
 }
 enfermedades = unique(enfermedades)
 print(Sys.time() - a)
+enfermedades = sort(enfermedades)
 enfermedades
 ```
 
@@ -91,6 +92,136 @@ for (j in 1:nrow(test)){
 }
 enfermedades = unique(enfermedades)
 print(Sys.time() - a)
+enfermedades = sort(enfermedades)
 enfermedades
 ```
 
+Separamos las palabras compuestas para que el diccionario pueda buscarlas.
+
+```{r separar}
+enfermedades2 = c()
+for (i in 1:length(enfermedades)){
+  enfermedades2[i] = str_extract(enfermedades[i], "^\\w+")
+  if (str_detect(enfermedades2[i], "(?<!i)s$") == TRUE){
+  enfermedades2[i] = gsub("s$", "", enfermedades2[i])
+}
+  }
+enfermedades2 = unique(enfermedades2)
+enfermedades2
+```
+
+Hacemos la búsqueda en el diccionario médico para verificar
+
+```{r buscador, warning=FALSE}
+library(stringi)
+urls = c()
+valid_urls = c()
+enfermedades3 = c()
+for (i in 1:length(enfermedades2)){
+  url = "https://www.cun.es/diccionario-medico/terminos/"
+  urlOK = paste(url, enfermedades2[i])
+  urlOK = stri_replace_all_regex(urlOK, c(" ", "á", "é", "í", "ó", "ú"), c("", "a", "e", "i", "o", "u"), vectorize_all = FALSE)
+  urls[i] = urlOK
+  tryCatch(
+  {
+    lines = readLines(con=urlOK, warn = FALSE)
+    enfermedades3 = c(enfermedades3, enfermedades2[i])
+    valid_urls = c(valid_urls, urlOK)
+  },
+  error=function(cond){
+    message(paste("URL no existe:", urlOK))
+    return(NA)
+  }
+)
+}
+enfermedades3 = unique(enfermedades3)
+enfermedades3
+```
+
+Una vez que ya tenemos las enfermedades buscadas en el diccionario, vamos a lematizarlas. Para ello, primero vamos a inicializar spacyR.
+
+```{r inicio, warning=FALSE, message=FALSE}
+library(spacyr)
+spacy_initialize(model = "es_core_news_sm")
+```
+Una vez inicializado, vamos a lematizar. Para lematizar, spacy_parse no acaba de lematizar bien, por tanto para sacar la forma invariable de las enfermedades, vamos a quitar los prefijos y sufijos.
+```{r lema}
+forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia|algia|oma","")
+```
+
+```{r, warning=FALSE}
+limpiaBloquesConTrim <- function(vec_cadenas){
+a <- gsub("<[^<>]*>", "", vec_cadenas)
+trimws(a)}
+
+reemplazaElemsHTML <- function(vec_cadenas){
+traduc <- list(c("&aacute;", "á"),
+               c("&Aacute;", "Á"),
+               c("&eacute;", "e"),
+               c("&Eacute;", "É"),
+               c("&iacute;", "í"),
+               c("&Iacute;", "Í"),
+               c("&oacute;", "ó"),
+               c("&Oacute;", "Ó"),
+               c("&uacute;", "ú"),
+               c("&Uacute;", "Ú"),
+               c("&ntilde;", "ñ"),
+               c("&Ntilde;", "Ñ"),
+               c("&iquest;", "¿"),
+               c("&iexcl;", "¡"),
+               c("&laquo;", "«"),
+               c("&raquo;", "»"))
+
+stri_replace_all_regex(vec_cadenas,
+                       pattern=unlist(lapply(traduc, function(x){x[1]})),
+                       replacement=unlist(lapply(traduc, function(x){x[2]})),
+                       vectorize=FALSE)
+}
+
+url_base = "https://www.cun.es/diccionario-medico/terminos/"
+definiciones = c()
+for (i in 1:length(valid_urls)){
+  lines = readLines(valid_urls[i],
+                    encoding = "UTF-8")
+  definicion = lines[891]
+  definicion <- limpiaBloquesConTrim(lines[891])
+  definicionOK <- reemplazaElemsHTML(definicion)
+  definiciones = c(definiciones, definicionOK)
+}
+names(definiciones) = enfermedades3
+```
+
+Creamos un archivo de texto para introducir todas las definiciones.
+
+```{r txt2}
+con1 <- file(
+  description = "Definiciones.txt",
+  open = "wt",
+  encoding = "UTF-8")
+
+dict_enf = c("algia", "hipo", "hiper", "itis", "oma")
+names(dict_enf) = c("Dolor", "Alteración", "Alteración", "Infección", "Cáncer")
+
+for (i in 1:length(definiciones)){
+  definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], sep="")
+  writeLines(definicionFinal, con1)
+  for (j in 1:5){
+    tipo = unlist(str_extract_all(names(definiciones[i]), dict_enf[j]))
+    if (!(is.null(names(which(dict_enf==tipo))))){
+      tipo = names(which(dict_enf==tipo))
+      writeLines(paste("Tipo:", tipo), con1)
+      break
+    }
+  }
+  lema = paste("Forma invariable: ", forma_invariable[i], sep="")
+  writeLines(lema, con1)
+  variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
+  if (length(variaciones) > 1){
+    variaciones = paste("Variaciones:", paste(as.character(variaciones), collapse = ", "))
+    writeLines(variaciones, con1)
+  }
+  writeLines("\n", con1)
+}
+
+close(con1)
+```
