@@ -49,6 +49,7 @@ library(stringr)
 
 ```{r}
 # Modo texto a texto
+library(stringr)
 a = Sys.time()
 enfermedades = c();
 for (texto in df$texto){
@@ -101,8 +102,10 @@ Separamos las palabras compuestas para que el diccionario pueda buscarlas.
 enfermedades2 = c()
 for (i in 1:length(enfermedades)){
   enfermedades2[i] = str_extract(enfermedades[i], "^\\w+")
+  if (str_detect(enfermedades2[i], "(?<!i)s$") == TRUE){
+  enfermedades2[i] = gsub("s$", "", enfermedades2[i])
 }
-
+  }
 enfermedades2 = unique(enfermedades2)
 enfermedades2
 ```
@@ -131,6 +134,7 @@ for (i in 1:length(enfermedades2)){
   }
 )
 }
+enfermedades3 = unique(enfermedades3)
 enfermedades3
 ```
 
@@ -203,7 +207,7 @@ for (i in 1:length(definiciones)){
     variaciones = paste("Variaciones:", paste(as.character(variaciones), collapse = ", "))
     writeLines(variaciones, con1)
   }
-  final = paste("Forma invariable de ",enfermedades3[i], ": ", forma_invariable[i])
+  final = paste("Forma invariable de ",enfermedades3[i], ": ", forma_invariable[i], sep="")
   writeLines(final, con1)
   writeLines("\n", con1)
 }
