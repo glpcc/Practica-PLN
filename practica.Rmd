@@ -213,7 +213,7 @@ for (i in 1:length(definiciones)){
       break
     }
   }
-  lema = paste("Lema: ", forma_invariable[i], sep="")
+  lema = paste("Forma invariable: ", forma_invariable[i], sep="")
   writeLines(lema, con1)
   variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
   if (length(variaciones) > 1){
