@@ -1,0 +1,37 @@
+carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
+Tipo: Cáncer
+Forma invariable: carcin
+Variaciones: carcinoma colorrectal, carcinoma colorrectal, carcinoma colorrectal
+
+
+flebitis: f. Inflamación de una vena.
+Tipo: Infección
+Forma invariable: fleb
+
+
+hepatitis: f. Inflamación del hígado producida por infecciones o intoxicaciones.
+Tipo: Infección
+Forma invariable: hepat
+
+
+hiperglucemia: f. Elevación del nivel circulante de glucosa por encima de la normalidad (de 90 mg/100 ml, en una persona en ayunas). Tras una comida abundante en carbohidratos puede elevarse hasta 140 mg /100 ml. La regulación de la glucemia se consigue por la interacción insulina-glucagón. Puede producirse, transitoriamente, en el marco de una reacción de estres, o de forma permanente, como consecuencia de un defecto en la secreción o acción de la insulina en el contexto de la diabetes mellitus.
+Tipo: Alteración
+Forma invariable: glucemia
+
+
+hiperplasia: f. Aumento cuantitativo de un tejido por un incremento del número de celulas que conservan su normalidad anatómica y funcional. Tambien se denomina hipertrofia numerica o hipergenesis.
+Tipo: Alteración
+Forma invariable: plasia
+Variaciones: hiperplasia endometrial, hiperplasia endometrial, hiperplasia prostática
+
+
+hipertricosis: f. Aumento del vello.
+Tipo: Alteración
+Forma invariable: tricosis
+
+
+síntoma: m. Dato subjetivo de enfermedad o situación del paciente. || Cualquier fenómeno anormal funcional o sensitivo, percibido por el enfermo, indicativo de una enfermedad. Convencionalmente, es opuesto a signo, anomalía perceptible por el observador.
+Tipo: Cáncer
+Forma invariable: sínt
+
+

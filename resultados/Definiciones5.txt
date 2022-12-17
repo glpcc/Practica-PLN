@@ -1,0 +1,189 @@
+adenocarcinoma: f. Lesión tumoral maligna de naturaleza epitelial, con formación de estructuras glandulares reconocibles u originadas a partir de un epitelio glandular. Al igual que el adenoma (benigno), existen varios tipos según la estructura dominante.
+Tipo: Cáncer
+Forma invariable: adenocarcin
+
+
+apendicitis: Ver apendicitis aguda.
+Tipo: Infección
+Forma invariable: apendic
+Variaciones: apendicitis aguda, apendicitis aguda, apendicitis aguda
+
+
+bronquiolitis: f. Enfermedad respiratoria que afecta a las pequeñas vías aereas con inflamación de las mismas, produciendo obstrucción del flujo aereo.
+Tipo: Infección
+Forma invariable: bronquiol
+
+
+carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
+Tipo: Cáncer
+Forma invariable: carcin
+Variaciones: carcinoma ovárico, carcinoma ductal, carcinoma lobulillar
+
+
+colangitis: f. Inflamación de las vías biliares.
+Tipo: Infección
+Forma invariable: colang
+
+
+colecistitis: f. Inflamación aguda, subaguda o crónica que afecta a la vesícula biliar. La causa más frecuente es la colelitiasis, que casi siempre se acompaña de signos histológicos de colecistitis crónica, y que es la causante del 95% de los casos de colecistitis aguda. El mecanismo de la colecistitis aguda es la distensión vesicular, por la obstrucción de la salida de la vesícula por un cálculo, lo que evoluciona a la inflamación con edema de la pared, a la infección de la bilis vesicular e incluso a la perforación vesicular con absceso o peritonitis biliar. La colecistitis aguda es una patología muy frecuente, cuyo mejor tratamiento es la colecistectomía. Ver colelitiasis.
+Tipo: Infección
+Forma invariable: colecist
+
+
+cromosoma: m. Cada una de las pequeñas formaciones estructurales en forma de bastoncillo en que se divide la cromatina del núcleo celular en la mitosis. Son los portadores del material genetico, es decir, de la información codificada del ácido desoxirribonucleico. Según la posición del centrómero se clasifican en: metacentricos, acrocentricos y telocentricos. Presentan un número constante para cada especie. En el hombre son 46, de los que 44 se denominan autosomas y dos son los llamados cromosomas sexuales, diferentes en el hombre (XY) y en la mujer (XX). Los cromosomas se dividen de forma identica en cada división celular (mitosis).
+Tipo: Cáncer
+Forma invariable: cromos
+
+
+dermatomiositis: f. Enfermedad compuesta por polimiositis, lesiones cutáneas, edema y dolores articulares.
+Tipo: Infección
+Forma invariable: dermatomios
+
+
+diverticulitis: f. Inflamación aguda de la pared de algún tramo del tubo digestivo (esófago, duodeno, intestino delgado o grueso, divertículo de Meckel), por obstrucción del vaciado de la luz de un divertículo a la luz contaminada del tubo digestivo. Las localizaciones más frecuentes son el colon y el divertículo de Meckel. Ver divertículo, diverticulosis, peritonitis fecaloidea. &gt; Saber más sobre la diverticulitis
+Tipo: Infección
+Forma invariable: diverticul
+
+
+endocarditis: f. Alteración inflamatoria del endocardio, que se caracteriza por la presencia de fenómenos exudativos y proliferativos en el endocardio valvular o, con menor frecuencia, en la superficie endocárdica de la cavidad cardiaca. Con gran frecuencia es debida a procesos infecciosos (endocarditis bacteriana o infecciosa), aunque en raras ocasiones se trata de endocarditis no infecciosas (endocarditis abacterianas) o de formas mixtas. Habitualmente cursa de forma aguda o subaguda, y la clínica depende de la magnitud de la destrucción valvular, de las posibles enfermedades concomitantes, del estado septico y del riesgo de embolismo.
+Tipo: Infección
+Forma invariable: endocard
+
+
+fibroma: m. Tumoración benigna del tejido conectivo, originada a partir de fibroblastos y en la que pueden predominar los elementos celulares o las fibras de colágeno con escasas celulas (tumor desmoide). Su manifestación puede ser múltiple.
+Tipo: Cáncer
+Forma invariable: fibr
+Variaciones: fibroma odontogénico, fibroma osificante
+
+
+glomerulonefritis: f. Enfermedad que afecta a la función y estructura glomerular. Son entidades muy heterogeneas en su etiopatogenia, clínica, histología y en su evolución. Las lesiones elementales glomerulares son: 1) proliferación celular (extracapilar, endocapilar e intercapilar, mesangial, posible infiltración de linfocitos, macrófagos, neutrófilos); 2) depósitos (subendoteliales, subepiteliales, de carácter difuso o segmentario-focal, de amiloide; de cadenas ligeras); 3) alteraciones de la membrana basal glomerular; 4) destrucción del flóculo o esclerosis glomerular. Puede presentarse en forma de síndrome nefrítico, síndrome nefrótico, anomalías urinarias asintomáticas o como glomerulonefritis crónica. Se clasifican en primarias o primitivas (por lesiones mínimas, membranosa, mesangial IgA, membrano-proliferativa, etc.) o secundarias (lupus eritematoso, poliarteritis nodosa, púrpura de Sch&ouml;nlein-Henoch, diabetes mellitus, etc.). &gt; Saber más sobre las glomerulonefritis
+Tipo: Infección
+Forma invariable: glomerulonefr
+
+
+granuloma: m. Nódulo formado por un tejido de granulación. Su estructura puede orientar hacia una etiología determinada.
+Tipo: Cáncer
+Forma invariable: granul
+
+
+hepatitis: f. Inflamación del hígado producida por infecciones o intoxicaciones.
+Tipo: Infección
+Forma invariable: hepat
+
+
+hepatocarcinoma: m. Tumor maligno del hígado, primario, derivado de las celulas del parenquima hepático, los hepatocitos. Es más frecuente en África y en el sudoeste de Asia. Generalmente lo padecen personas adultas, con antecedentes de alcoholismo, cirrosis, virus, etc. Se caracteriza por presentar un hígado grande, dolor en la parte superior derecha del abdomen, perdida de peso, falta de apetito, ascitis, etc. &gt; Saber más sobre el hepatocarcinoma
+Tipo: Cáncer
+Forma invariable: hepatocarcin
+
+
+hiperglucemia: f. Elevación del nivel circulante de glucosa por encima de la normalidad (de 90 mg/100 ml, en una persona en ayunas). Tras una comida abundante en carbohidratos puede elevarse hasta 140 mg /100 ml. La regulación de la glucemia se consigue por la interacción insulina-glucagón. Puede producirse, transitoriamente, en el marco de una reacción de estres, o de forma permanente, como consecuencia de un defecto en la secreción o acción de la insulina en el contexto de la diabetes mellitus.
+Tipo: Alteración
+Forma invariable: glucemia
+
+
+hiperlaxitud: f. Laxitud exagerada de las estructuras elásticas de un tejido. Se presenta en algunos procesos congenitos, como la enfermedad de Enhler-Danlos o ciertas formas de parálisis cerebral infantil.
+Tipo: Alteración
+Forma invariable: laxitud
+
+
+hipertrofia: f. Aumento del tamaño de un órgano o tejido, secundario al aumento de tamaño de sus celulas constituyentes, generalmente es producto de la adaptación a sobrecargas funcionales, exigidas a dichos órganos. En los órganos huecos, como el corazón, la hipertrofia puede ser excentrica, con dilatación de la cavidad, o concentrica, sin dilatación de la cavidad.
+Tipo: Alteración
+Forma invariable: trofia
+Variaciones: hipertrofia asimétrica, hipertrofia cardiaca, hipertrofia miocárdica, hipertrofia muscular
+
+
+hipoacusia: f. Disminución de la agudeza auditiva.
+Tipo: Alteración
+Forma invariable: acusia
+
+
+hipocampo: m. Circunvolución del lóbulo temporal, que tiene la forma de un caballito de mar y de ahí deriva (griego) su nombre. Presenta una forma incurvada, con una cabeza en el extremo rostral y una cola. Se encuentra en la cara medial del lóbulo temporal. El surco del hipocampo hunde la corteza hipocámpica en el cuerno temporal del ventrículo lateral, formando una prominencia conocida como asta de Ammon. En ella se distinguen cuatro campos conocidos como CA1, CA2, CA3 y CA4. Su estructura es la del arquicórtex y se constituye por tres capas que, de la superficie a la profundidad, son: molecular, piramidal y polimorfa. Además del asta de Ammon, el otro componente del hipocampo es la circunvolución dentada, formada, principalmente, por gránulos. El hipocampo es una pieza clave en el proceso de la memoria: cuando se lesiona, bilateralmente, se pierde la memoria anterógrada declarativa.
+Tipo: Alteración
+Forma invariable: campo
+
+
+hipoplasia: f. Desarrollo incompleto o defectuoso de un órgano o tejido.
+Tipo: Alteración
+Forma invariable: plasia
+Variaciones: hipoplasia maxilar, hipoplasia pulmonar
+
+
+hipotálamo: m. Parte inferior del diencefalo. Está formado por varios núcleos y su volumen es muy reducido. A pesar de su escaso volumen desempeña funciones vitales. Una de ellas es la regulación de la secreción de la hipófisis, mediante los factores liberadores. Otra función, más compleja, es la coordinación de la actividad conductual, pudiendose hablar del centro hipotalámico de la micción, de la copulación, de la defecación, del sueño, del apetito, etc.
+Tipo: Alteración
+Forma invariable: tálamo
+
+
+hipotensión: f. Tensión sanguínea por debajo de la requerida para un buen funcionamiento del metabolismo. Se manifiesta por una de estas tres condiciones: ampliación del lecho vascular; por disminución del volumen de sangre circulante, y por una capacidad disminuida del bombeo cardiaco. Suele observarse en personas que no presentan ninguna alteración aparente, en cuyo caso suele cursar generalmente de forma asintomática. &gt; Saber más sobre la hipotensión
+Tipo: Alteración
+Forma invariable: tensión
+
+
+hipotiroidismo: m. Disminución patológica de la función tiroidea, que puede estar motivada por causas diversas: falta de iodo en la dieta (como sucede en las zonas de bocio endemico), disminución de la hormona tirotropa de la hipófisis o su factor liberador hipotalámico, o bien por un desarrollo deficiente o una alteración tiroidea. Se produce una disminución del metabolismo, un enlentecimiento en la actividad corporal y psíquica, etc. &gt; Saber más sobre el hipotiroidismo
+Tipo: Alteración
+Forma invariable: tiroidismo
+Variaciones: hipotiroidismo subclínico, hipotiroidismo subclínico, hipotiroidismo subclínico
+
+
+hipoxia: f. Disminución de la disponibilidad de oxígeno por un órgano o de todo el organismo.
+Tipo: Alteración
+Forma invariable: xia
+
+
+linfoma: m. Grupo heterogeneo y amplio de síndromes linfoproliferativos tumorales, con expansión clonal de una línea o sublínea linfoide, alterada por mecanismos que inciden en la transformación neoplásica de estas celulas. Los linfomas tienen una diversidad clínico evolutiva, así como diferentes criterios pronósticos y unas formas de comienzo ganglionar o extraganglionar. Son tumores muy sensibles a la quimioterapia y a la radioterapia, teniendo un importante potencial de curabilidad. La clasificación de los linfomas se basa fundamentalmente en la naturaleza de la celula linfoide proliferante. De esta manera los linfomas se clasifican en tres grandes grupos que incluyen los linfomas derivados de linfocitos B, de linfocitos T, y un grupo particular englobado bajo el concepto de linfoma o enfermedad de Hodgkin. Los linfomas de celulas B y T se subdividen a su vez en dos grandes grupos: 1) linfomas linfoblásticos originados en celulas linfoides inmaduras procedentes de los compartimentos centrales (medula ósea o timo) y 2) linfomas de celulas perifericas en los que proliferan celulas linfoides efectoras localizadas habitualmente en los compartimentos perifericos. En esta clasificación se incluyen conjuntamente procesos predominantemente leucemicos y linfomas. Este hecho se debe a que numerosos procesos linfoproliferativos pueden presentarse en forma leucemica, en forma de linfoma, o ambas, según el momento de su evolución. &gt; Saber más sobre el linfoma
+Tipo: Cáncer
+Forma invariable: linf
+
+
+lipoma: m. Tumor benigno formado por adipocitos.
+Tipo: Cáncer
+Forma invariable: lip
+Variaciones: lipoma clásico, lipoma confirmado, lipoma intramuscular
+
+
+lumbalgia: f. Dolor lumbar de variada etiología. Ver lumbago.
+Tipo: Dolor
+Forma invariable: lumb
+
+
+melanoma: m. Tumor maligno constituido por melanoblastos. Aparecen como manchas negras o marrones en la piel y mucosas. &gt; Saber más sobre el melanoma
+Tipo: Cáncer
+Forma invariable: melan
+
+
+mieloma: m. Neoplasia producida por la proliferación de las celulas de la medula ósea y que provoca la destrucción del hueso donde asienta. El mieloma múltiple (MM) constituye el prototipo de gammapatía monoclonal maligna. La edad media es de 65 años y solo el 12% de los pacientes tienen menos de 50 años en el momento del diagnóstico. Clínicamente el dolor óseo constituye la manifestación inicial más frecuente, con lesiones osteolíticas en la radiología ósea, en el 60-70% de los casos. En otros pacientes, la manifestación inicial puede ser un proceso infeccioso, en general una neumonía o una infección urinaria o una compresión medular producida por un plasmocitoma extramedular. Los síntomas iniciales tambien pueden deberse a hipercalcemia o a insuficiencia renal. Una tercera parte de los casos tienen una cifra de hemoglobina inferior a 9 g/dl. Casi una cuarta parte de los pacientes presentan insuficiencia renal. La infiltración de la medula ósea por celulas plasmáticas acostumbra a ser superior al 20%. El proteinograma electroforetico muestra una banda homogenea en el 85% de los casos. En el 15% restante, la electroforesis es normal o muestra solo una pequeña banda (mielomas de cadenas ligeras y los raros casos de mieloma IgD o no secretor). En la mitad de los casos, se encuentra proteinuria de cadenas ligeras. Una forma especial de mieloma es el quiescente, que presenta un componente mieloma serico superior a 3 g/dl y una proporción de celulas plasmáticas en la medula ósea superior al 10%, sin anemia, osteólisis, hipercalcemia, insuficiencia renal, ni otras manifestaciones debidas a la gammapatía monoclonal. Estos pacientes son importantes para su reconocimiento, pues no deben tratarse hasta que exista una evidente progresión de la enfermedad. Los criterios diagnósticos de pacientes con MM más frecuentes son: componente M serico y/o urinario, infiltración medular por celulas plasmáticas y lesiones osteolíticas. Con el empleo de melfalán o ciclosfosfamida, en general asociados a prednisona, se consigue una tasa de respuestas del 50-60% y la media, de supervivencia, desde el inicio del tratamiento, oscila entre los dos y tres años. En los pacientes resistentes a los agentes alquilantes, el tratamiento de rescate con VBAB o VBAD da lugar a un 25-35% de respuestas. Una dosis de ciclofosfamida entre 600 y 1.000 mg cada tres semanas, junto a 50 mg de prednisona en días alternos, constituye un buen tratamiento paliativo para los pacientes ya resistentes, así como en pacientes de edad avanzada, con un mal estado general o con una escasa reserva medular. El trasplante alogenico solo puede aplicarse a una minoría de enfermos (menos del 5% de los mismos tienen una edad inferior a los 50 años y disponen de un donante histocompatible). Para mejorar los resultados del trasplante alogenico se debería disminuir la enfermedad del injerto contra el huesped, quizá con un trasplante a partir de celulas CD34 de la sangre periferica, y disminuir la frecuencia de las recaídas, tal vez con una transfusión de los linfocitos del donante postrasplante. En cuanto al autotrasplante constituye una alternativa terapeutica prometedora, pero su eficacia, a largo plazo, todavía debe contrastarse con los mejores regímenes poliquimioterápicos. &gt; Saber más sobre el mieloma múltiple
+Tipo: Cáncer
+Forma invariable: miel
+
+
+osteomielitis: f. Infección piógena de un hueso.
+Tipo: Infección
+Forma invariable: osteomiel
+Variaciones: osteomielitis crónica, osteomielitis secundaria, osteomielitis tratados
+
+
+peritonitis: f. Inflamación del peritoneo producida por bacterias o sustancias irritantes, que se introducen en la cavidad abdominal por una herida penetrante o por la perforación de un órgano del aparato digestivo o reproductor. Los signos y síntomas que se producen son: distensión abdominal, rigidez y dolor, dolor a la descompresión, disminución o ausencia de ruidos intestinales, náuseas, vómitos y taquicardia.
+Tipo: Infección
+Forma invariable: periton
+
+
+sarcoma: m. Neoplasia maligna que se origina en los tejidos derivados del mesenquima: tejido muscular, conectivo, óseo, etc.
+Tipo: Cáncer
+Forma invariable: sarc
+
+
+síntoma: m. Dato subjetivo de enfermedad o situación del paciente. || Cualquier fenómeno anormal funcional o sensitivo, percibido por el enfermo, indicativo de una enfermedad. Convencionalmente, es opuesto a signo, anomalía perceptible por el observador.
+Tipo: Cáncer
+Forma invariable: sínt
+
+
+sinusitis: f. Inflamación de los senos óseos paranasales. En adultos el seno más frecuentemente afectado es el maxilar y en el niño las celdas etmoidales. Cuando hay varios senos afectados se habla de polisinusitis, y si están afectados todos, pansinusitis. Puede ser uni o bilateral. &gt; Saber más sobre la sinusitis
+Tipo: Infección
+Forma invariable: sinus
+Variaciones: sinusitis crónica, sinusitis crónica, sinusitis frontal
+
+
+vasculitis: f. Inflamación de los vasos sanguíneos. Constituye un grupo de enfermedades que se caracterizan por la inflamación multifocal y la necrosis de los vasos sanguíneos, que puede tener diferentes formas de expresión, desde la forma local autolimitada hasta la forma difusa grave. Su incidencia es de veinticinco casos por cada millón de población. Los tratamientos con corticoides e inmunosupresores consiguen el control de la enfermedad en el 90% de los casos. Existen diversos marcadores para su diagnóstico, pero el más útil es la determinación de anticuerpos anticitoplasma del neutrófilo (ANCA). La clasificación de las vasculitis es muy diversa atendiendo a criterios clínicos, anatomopatológicos, etiopatogenicos y al tamaño del vaso afecto. La más reciente es la efectuada por un comite de expertos en Chapel Hill en 1993 (Carolina del Norte, EE.UU.) basada en criterios anatómicos de tamaño del vaso. Distingue la vasculitis de grandes vasos (arteritis de celulas gigantes, arteritis de Takayasu), de medianos vasos (poliarteritis nodosa clásica, enfermedad de Kawasaki) y de pequeños vasos (granulomatosis de Wegener, poliangeitis microscópica, síndrome de Churg-Strauss, púrpura de Sch&ouml;nlein-Henoch, vasculitis de la crioglobulinemia esencial y la vasculitis leucocitoclástica cutánea).
+Tipo: Infección
+Forma invariable: vascul
+
+

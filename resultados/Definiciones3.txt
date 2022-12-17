@@ -1,0 +1,172 @@
+adenocarcinoma: f. Lesión tumoral maligna de naturaleza epitelial, con formación de estructuras glandulares reconocibles u originadas a partir de un epitelio glandular. Al igual que el adenoma (benigno), existen varios tipos según la estructura dominante.
+Tipo: Cáncer
+Forma invariable: adenocarcin
+
+
+amigdalitis: f. Inflamación aguda o crónica de las amígdalas palatinas o linguales.
+Tipo: Infección
+Forma invariable: amigdal
+Variaciones: amigdalitis aguda, amigdalitis pultácea
+
+
+apendicitis: Ver apendicitis aguda.
+Tipo: Infección
+Forma invariable: apendic
+
+
+artritis: f. Inflamación de las articulaciones.
+Tipo: Infección
+Forma invariable: artr
+Variaciones: artritis periférica, artritis periférica
+
+
+colitis: f. Estado patológico que se caracteriza por un trastorno inflamatorio del colon que puede ser limitado o difundido por todo el. Existen diferentes tipo de colitis, según su etiología, evolución, etc.
+Tipo: Infección
+Forma invariable: col
+Variaciones: colitis inespecífica, colitis pseudomembranosa, colitis pseudomembranosa, colitis pseudomembranosa, colitis pseudomembranosa, colitis inducida, colitis inducida
+
+
+cromosoma: m. Cada una de las pequeñas formaciones estructurales en forma de bastoncillo en que se divide la cromatina del núcleo celular en la mitosis. Son los portadores del material genetico, es decir, de la información codificada del ácido desoxirribonucleico. Según la posición del centrómero se clasifican en: metacentricos, acrocentricos y telocentricos. Presentan un número constante para cada especie. En el hombre son 46, de los que 44 se denominan autosomas y dos son los llamados cromosomas sexuales, diferentes en el hombre (XY) y en la mujer (XX). Los cromosomas se dividen de forma identica en cada división celular (mitosis).
+Tipo: Cáncer
+Forma invariable: cromos
+
+
+enterocolitis: f. Inflamación aguda de los intestinos delgado y grueso, habitualmente infecciosa, que se manifiesta con inflamación de la mucosa, diarrea (a veces hemorrágica) y deshidratación. Raramente produce perforación intestinal (fiebre tifoidea, a veces salmonelosis graves).
+Tipo: Infección
+Forma invariable: enterocol
+Variaciones: enterocolitis inducida, enterocolitis inducida
+
+
+gingivitis: f. Inflamación de las encías. Tambien se denomina ulitis.
+Tipo: Infección
+Forma invariable: gingiv
+
+
+granuloma: m. Nódulo formado por un tejido de granulación. Su estructura puede orientar hacia una etiología determinada.
+Tipo: Cáncer
+Forma invariable: granul
+Variaciones: granuloma eosinofílico, granuloma gigantocelular, granuloma gigantocelular
+
+
+hepatitis: f. Inflamación del hígado producida por infecciones o intoxicaciones.
+Tipo: Infección
+Forma invariable: hepat
+
+
+hiperactividad: f. Actividad, anormalmente aumentada, que lleva, por lo general, a ir de una tarea a otra sin acabar ninguna. Es típica del síndrome hipercinetico de la infancia, de los trastornos maníacos y de algunas formas de esquizofrenia.
+Tipo: Alteración
+Forma invariable: actividad
+
+
+hiperamonemia: f. Nivel elevado de amoniaco en sangre. Puede estar producido por una deficiencia de la enzima ornitina carbamoiltransferasa o bien de la enzima carbamoilfosfato sintetasa. Ambos casos son congenitos y se caracterizan porque los pacientes presentan vómitos, hepatomegalia, letargia. La hiperamonemia tambien se presenta en diversas hepatopatías.
+Tipo: Alteración
+Forma invariable: amonemia
+
+
+hipermovilidad: f. Excesivo incremento de la movilidad de alguna parte del cuerpo.
+Tipo: Alteración
+Forma invariable: movilidad
+Variaciones: hipermovilidad articular, hipermovilidad articular
+
+
+hiperplasia: f. Aumento cuantitativo de un tejido por un incremento del número de celulas que conservan su normalidad anatómica y funcional. Tambien se denomina hipertrofia numerica o hipergenesis.
+Tipo: Alteración
+Forma invariable: plasia
+
+
+hipertrigliceridemia: f. Elevación de los trigliceridos en la sangre, por encima de los valores de referencia, que en un adulto oscilan alrededor de 170 mg/dl.
+Tipo: Alteración
+Forma invariable: trigliceridemia
+
+
+hipertrofia: f. Aumento del tamaño de un órgano o tejido, secundario al aumento de tamaño de sus celulas constituyentes, generalmente es producto de la adaptación a sobrecargas funcionales, exigidas a dichos órganos. En los órganos huecos, como el corazón, la hipertrofia puede ser excentrica, con dilatación de la cavidad, o concentrica, sin dilatación de la cavidad.
+Tipo: Alteración
+Forma invariable: trofia
+
+
+hipoacusia: f. Disminución de la agudeza auditiva.
+Tipo: Alteración
+Forma invariable: acusia
+
+
+hipocondrio: m. Desde el punto de vista etimológico, lugar bajo las costillas. Desde la perspectiva anatómica, se refiere a los cuadrantes superiores del abdomen que están bajo las parrillas costales que lo cubren parcialmente. En el lado derecho lo ocupa el hígado, y en el lado izquierdo, el bazo, el fundus gástrico, el cuerpo y la cola de páncreas y el ángulo esplenico del colon. Ver laparotomía subcostal.
+Tipo: Alteración
+Forma invariable: condrio
+
+
+hipoplasia: f. Desarrollo incompleto o defectuoso de un órgano o tejido.
+Tipo: Alteración
+Forma invariable: plasia
+
+
+hipoproteinemia: f. Disminución de la concentración serica de proteínas (&lt;&lt; 6,5 g/dl). Las causas más frecuentes son la malnutrición, síndromes de malabsorción, perdidas renales (síndrome nefrótico, aminoacidurias), perdidas intestinales (malabsorción, enfermedad celíaca, colitis ulcerosa, pancreatitis crónica, etc.) o deficit de síntesis (hepatopatías tipo cirrosis). Esta disminución se efectúa a expensas de la albúmina, fundamentalmente, y condiciona la disminución de la presión oncótica, pasando y acumulándose el agua desde el espacio intravascular al intersticial, con desarrollo de edema y ascitis a veces generalizado (anasarca).
+Tipo: Alteración
+Forma invariable: proteinemia
+
+
+hipotiroidismo: m. Disminución patológica de la función tiroidea, que puede estar motivada por causas diversas: falta de iodo en la dieta (como sucede en las zonas de bocio endemico), disminución de la hormona tirotropa de la hipófisis o su factor liberador hipotalámico, o bien por un desarrollo deficiente o una alteración tiroidea. Se produce una disminución del metabolismo, un enlentecimiento en la actividad corporal y psíquica, etc. &gt; Saber más sobre el hipotiroidismo
+Tipo: Alteración
+Forma invariable: tiroidismo
+Variaciones: hipotiroidismo severo, hipotiroidismo subclínico
+
+
+hipotonía: f. Deficit o disminución del tono muscular. Se observa, aunque no exclusivamente, en lesiones del sistema nervioso periferico y miopatías.
+Tipo: Alteración
+Forma invariable: tonía
+Variaciones: hipotonía generalizada, hipotonía muscular
+
+
+hipoxia: f. Disminución de la disponibilidad de oxígeno por un órgano o de todo el organismo.
+Tipo: Alteración
+Forma invariable: xia
+Variaciones: hipoxia combinada, hipoxia normobárica, hipoxia simulada
+
+
+linfoma: m. Grupo heterogeneo y amplio de síndromes linfoproliferativos tumorales, con expansión clonal de una línea o sublínea linfoide, alterada por mecanismos que inciden en la transformación neoplásica de estas celulas. Los linfomas tienen una diversidad clínico evolutiva, así como diferentes criterios pronósticos y unas formas de comienzo ganglionar o extraganglionar. Son tumores muy sensibles a la quimioterapia y a la radioterapia, teniendo un importante potencial de curabilidad. La clasificación de los linfomas se basa fundamentalmente en la naturaleza de la celula linfoide proliferante. De esta manera los linfomas se clasifican en tres grandes grupos que incluyen los linfomas derivados de linfocitos B, de linfocitos T, y un grupo particular englobado bajo el concepto de linfoma o enfermedad de Hodgkin. Los linfomas de celulas B y T se subdividen a su vez en dos grandes grupos: 1) linfomas linfoblásticos originados en celulas linfoides inmaduras procedentes de los compartimentos centrales (medula ósea o timo) y 2) linfomas de celulas perifericas en los que proliferan celulas linfoides efectoras localizadas habitualmente en los compartimentos perifericos. En esta clasificación se incluyen conjuntamente procesos predominantemente leucemicos y linfomas. Este hecho se debe a que numerosos procesos linfoproliferativos pueden presentarse en forma leucemica, en forma de linfoma, o ambas, según el momento de su evolución. &gt; Saber más sobre el linfoma
+Tipo: Cáncer
+Forma invariable: linf
+
+
+neurofibroma: m. Tumoración benigna del sistema nervioso periferico, que engloba la totalidad de un tronco nervioso o de una raíz y que se observa en la neurofibromatosis.
+Tipo: Cáncer
+Forma invariable: neurofibr
+
+
+otitis: f. Inflamación del oído. Puede producir dolor, fiebre, trastornos de la audición, hipoacusia, tinnitus y vertigo.
+Tipo: Infección
+Forma invariable: ot
+Variaciones: otitis media, otitis media, otitis media, otitis media, otitis media
+
+
+pancreatitis: f. Inflamación del páncreas, que puede ser aguda o crónica. El cuadro agudo cursa con dolor epigástrico, vómitos, contractura abdominal y aumento de amilasa y lipasa. La afección crónica puede evolucionar hacia la fibrosis pancreática, dando lugar a una insuficiencia pancreática exocrina, y favorecer la aparición de diabetes mellitus.
+Tipo: Infección
+Forma invariable: pancreat
+Variaciones: pancreatitis aguda, pancreatitis asociada, pancreatitis lúpica
+
+
+papiloma: m. Hipertrofia de las papilas.
+Tipo: Cáncer
+Forma invariable: papil
+
+
+periodontitis: f. Inflamación del tejido que rodea a los dientes (periodonto).
+Tipo: Infección
+Forma invariable: periodont
+
+
+pulpitis: f. Inflamación de la pulpa dentaria; es sinónimo de endodontitis.
+Tipo: Infección
+Forma invariable: pulp
+Variaciones: pulpitis irreversible, pulpitis irreversible
+
+
+schwannoma: m. Tumor benigno originado por las celulas de Schwann.
+Tipo: Cáncer
+Forma invariable: schwann
+
+
+sinusitis: f. Inflamación de los senos óseos paranasales. En adultos el seno más frecuentemente afectado es el maxilar y en el niño las celdas etmoidales. Cuando hay varios senos afectados se habla de polisinusitis, y si están afectados todos, pansinusitis. Puede ser uni o bilateral. &gt; Saber más sobre la sinusitis
+Tipo: Infección
+Forma invariable: sinus
+
+

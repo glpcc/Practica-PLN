@@ -6,12 +6,10 @@ library('rjson')
 
 # Leemos el documento JSON que utilizaremos para las pruebas y creamos un df
 # que guarde los todos los datos.
-f = fromJSON(file = 'reduced_article_list2.json')
+f = fromJSON(file = 'reduced_article_list7.json')
 ids = unlist(lapply(f$articles, function (x) x$id ))
-titulos = unlist(lapply(f$articles, function (x) x$title ))
-ano = unlist(lapply(f$articles, function (x) x$year ))
 texto = unlist(lapply(f$articles, function (x) x$abstractText ))
-df = data.frame(ids,titulos,ano,texto)
+df = data.frame(ids,texto)
 
 # Cargamos la librería udpipe y el modelo español.
 library(udpipe)
@@ -45,7 +43,7 @@ for (i in 1:length(enfermedades)){
     enfermedades2[i] = gsub("s$", "", enfermedades2[i])
   }
 }
-enfermedades2 = unique(enfermedades2)
+enfermedades2 = unique(tolower(enfermedades2))
 
 # Buscamos en el diccionario médico para buscar las palabras del dominio médico.
 library(stringi)
@@ -117,7 +115,7 @@ for (i in 1:length(valid_urls)){
 names(definiciones) = enfermedades3
 
 # Vamos a crear el .txt para introducir las enfermedades
-con1 <- file(description = "Definiciones.txt",
+con1 <- file(description = "Definiciones7.txt",
              open = "wt",
              encoding = "UTF-8")
 

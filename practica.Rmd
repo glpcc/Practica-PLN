@@ -22,10 +22,8 @@ Cargo el json con los articulos (durante las pruebas el reducido)
 ```{r cargar_json}
 f = fromJSON(file = 'reduced_article_list2.json');
 ids = unlist(lapply(f$articles, function (x) x$id ));
-titulos = unlist(lapply(f$articles, function (x) x$title ));
-ano = unlist(lapply(f$articles, function (x) x$year ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
-df = data.frame(ids,titulos,ano,texto)
+df = data.frame(ids,texto)
 ```
 Ahora lo que vamos a hacer es buscar los afijos que nos sirvan para clasificar.
 
@@ -106,7 +104,7 @@ for (i in 1:length(enfermedades)){
   enfermedades2[i] = gsub("s$", "", enfermedades2[i])
 }
   }
-enfermedades2 = unique(enfermedades2)
+enfermedades2 = unique(tolower(enfermedades2))
 enfermedades2
 ```
 
