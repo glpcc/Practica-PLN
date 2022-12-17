@@ -203,22 +203,23 @@ dict_enf = c("algia", "hipo", "hiper", "itis", "oma")
 names(dict_enf) = c("Dolor", "Alteración", "Alteración", "Infección", "Cáncer")
 
 for (i in 1:length(definiciones)){
+  definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], sep="")
+  writeLines(definicionFinal, con1)
   for (j in 1:5){
     tipo = unlist(str_extract_all(names(definiciones[i]), dict_enf[j]))
     if (!(is.null(names(which(dict_enf==tipo))))){
       tipo = names(which(dict_enf==tipo))
+      writeLines(paste("Tipo:", tipo), con1)
       break
     }
   }
-  definicionFinal = paste(names(definiciones[i]), " (", tipo, "): ", definiciones[i], sep="")
-  writeLines(definicionFinal, con1)
+  lema = paste("Lema: ", forma_invariable[i], sep="")
+  writeLines(lema, con1)
   variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
   if (length(variaciones) > 1){
     variaciones = paste("Variaciones:", paste(as.character(variaciones), collapse = ", "))
     writeLines(variaciones, con1)
   }
-  final = paste("Forma invariable de ",enfermedades3[i], ": ", forma_invariable[i], sep="")
-  writeLines(final, con1)
   writeLines("\n", con1)
 }
 
