@@ -121,7 +121,17 @@ con1 <- file(description = "Definiciones.txt",
              open = "wt",
              encoding = "UTF-8")
 
+dict_enf = c("algia", "hipo", "hiper", "itis", "oma")
+names(dict_enf) = c("Dolor", "Alteración", "Alteración", "Infección", "Cáncer")
+
 for (i in 1:length(definiciones)){
+  for (j in 1:5){
+    tipo = unlist(str_extract_all(names(definiciones[i]), dict_enf[j]))
+    if (!(is.null(names(which(dict_enf==tipo))))){
+      tipo = names(which(dict_enf==tipo))
+      break
+    }
+  }
   definicionFinal = paste(names(definiciones[i]), ": ", definiciones[i], sep="")
   writeLines(definicionFinal, con1)
   variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
