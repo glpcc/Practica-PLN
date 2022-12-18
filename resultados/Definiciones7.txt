@@ -51,13 +51,13 @@ Forma invariable: actividad
 hipercolesterolemia: f. Aumento plasmático de las cifras de colesterol. Se considera como uno de los factores de riesgo más importantes para el desarrollo de la aterosclerosis, así como de sus principales manifestaciones, especialmente la cardiopatía isquemica. Puede ser debida a factores exógenos, como una dieta rica en grasas de origen animal y en colesterol, o a factores endógenos, en el caso de las hipercolesterolemias de base genetica (hipercolesterolemia familiar) o las hipercolesterolemias secundarias a otras enfermedades (hipotiroidismo, diabetes mellitus, colestasis, etc.). Suelen clasificarse en relación a las distintas lipoproteínas, causantes del incremento de los niveles de colesterol plasmático. La clínica depende exclusivamente del desarrollo de lesiones ateroscleróticas vasculares, que pueden provocar cardiopatía isquemica, accidentes cerebrovasculares, arteriopatía de extremidades inferiores, etc.; y de la aparición de estigmas secundarios al depósito de lípidos (xantomas tendinosos, xantelasmas, etc.). El tratamiento, habitualmente, consiste en medidas higienico-dieteticas, así como la administración de fármacos hipolipemiantes.Ver hiperlipoproteinemia
 Tipo: Alteración
 Forma invariable: colesterolemia
-Variaciones: hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar, hipercolesterolemia familiar
+Variaciones: hipercolesterolemia familiar
 
 
 hiperlipidemia: f. Termino generico empleado para referirse al aumento de las concentraciones de cualquier lípido en el plasma. Ver hipercolesterolemia, hiperlipoproteinemia.
 Tipo: Alteración
 Forma invariable: lipidemia
-Variaciones: hiperlipidemia primaria, hiperlipidemia primaria
+Variaciones: hiperlipidemia primaria
 
 
 hiperprolactinemia: f. Elevación de la concentración circulante de prolactina en el plasma. Ocurre fisiológicamente en el embarazo, coito y situaciones de estres. Puede ser debida a adenomas hipofisarios productores de prolactina, hipotiroidismo primario, síndrome del ovario poliquístico, alteraciones de la función hepática o renal y a ingestión de fármacos, con efecto bloqueante dopaminergico, como metoclopramida o sulpiride. Desde el punto de vista clínico se manifiesta por hipogonadismo, infertilidad y galactorrea. Ver prolactina, síndrome amenorrea-galactorrea.
@@ -103,7 +103,7 @@ Forma invariable: linf
 melanoma: m. Tumor maligno constituido por melanoblastos. Aparecen como manchas negras o marrones en la piel y mucosas. &gt; Saber más sobre el melanoma
 Tipo: Cáncer
 Forma invariable: melan
-Variaciones: melanoma invasor, melanoma lentigo, melanoma lentigo
+Variaciones: melanoma invasor, melanoma lentigo
 
 
 osteosarcoma: m. Tumor maligno del hueso, constituido por tejido óseo u osteoide, cartilaginoso y conectivo. Tiene un caracter invasivo muy acusado. El crecimiento subperióstico hace que este se separe de la cortical y dibuje una imagen radiológica consecuencia de la reacción perióstica, que al destruirse parcialmente da lugar a la imagen radiológica llamada triángulo de Codman. La localización preferente es la región metafisaria de los huesos largos en las vecinas de la fisis más fertiles (extremidad inferior del femur y superior de la tibia y en superior del húmero). El 65% está alrededor de la rodilla. Da metástasis, sobre todo pulmonares. Generalmente se presenta en personas jóvenes, con preferencia en el sexo masculino entre los 10 y los 25 años. Tambien se le llama sarcoma oosteogenico. &gt; Saber más sobre los tumores musculoesqueleticos

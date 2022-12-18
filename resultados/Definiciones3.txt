@@ -17,13 +17,13 @@ Forma invariable: apendic
 artritis: f. Inflamación de las articulaciones.
 Tipo: Infección
 Forma invariable: artr
-Variaciones: artritis periférica, artritis periférica
+Variaciones: artritis periférica
 
 
 colitis: f. Estado patológico que se caracteriza por un trastorno inflamatorio del colon que puede ser limitado o difundido por todo el. Existen diferentes tipo de colitis, según su etiología, evolución, etc.
 Tipo: Infección
 Forma invariable: col
-Variaciones: colitis inespecífica, colitis pseudomembranosa, colitis pseudomembranosa, colitis pseudomembranosa, colitis pseudomembranosa, colitis inducida, colitis inducida
+Variaciones: colitis inespecífica, colitis pseudomembranosa, colitis inducida
 
 
 cromosoma: m. Cada una de las pequeñas formaciones estructurales en forma de bastoncillo en que se divide la cromatina del núcleo celular en la mitosis. Son los portadores del material genetico, es decir, de la información codificada del ácido desoxirribonucleico. Según la posición del centrómero se clasifican en: metacentricos, acrocentricos y telocentricos. Presentan un número constante para cada especie. En el hombre son 46, de los que 44 se denominan autosomas y dos son los llamados cromosomas sexuales, diferentes en el hombre (XY) y en la mujer (XX). Los cromosomas se dividen de forma identica en cada división celular (mitosis).
@@ -34,7 +34,7 @@ Forma invariable: cromos
 enterocolitis: f. Inflamación aguda de los intestinos delgado y grueso, habitualmente infecciosa, que se manifiesta con inflamación de la mucosa, diarrea (a veces hemorrágica) y deshidratación. Raramente produce perforación intestinal (fiebre tifoidea, a veces salmonelosis graves).
 Tipo: Infección
 Forma invariable: enterocol
-Variaciones: enterocolitis inducida, enterocolitis inducida
+Variaciones: enterocolitis inducida
 
 
 gingivitis: f. Inflamación de las encías. Tambien se denomina ulitis.
@@ -45,7 +45,7 @@ Forma invariable: gingiv
 granuloma: m. Nódulo formado por un tejido de granulación. Su estructura puede orientar hacia una etiología determinada.
 Tipo: Cáncer
 Forma invariable: granul
-Variaciones: granuloma eosinofílico, granuloma gigantocelular, granuloma gigantocelular
+Variaciones: granuloma eosinofílico, granuloma gigantocelular
 
 
 hepatitis: f. Inflamación del hígado producida por infecciones o intoxicaciones.
@@ -66,7 +66,7 @@ Forma invariable: amonemia
 hipermovilidad: f. Excesivo incremento de la movilidad de alguna parte del cuerpo.
 Tipo: Alteración
 Forma invariable: movilidad
-Variaciones: hipermovilidad articular, hipermovilidad articular
+Variaciones: hipermovilidad articular
 
 
 hiperplasia: f. Aumento cuantitativo de un tejido por un incremento del número de celulas que conservan su normalidad anatómica y funcional. Tambien se denomina hipertrofia numerica o hipergenesis.
@@ -135,7 +135,7 @@ Forma invariable: neurofibr
 otitis: f. Inflamación del oído. Puede producir dolor, fiebre, trastornos de la audición, hipoacusia, tinnitus y vertigo.
 Tipo: Infección
 Forma invariable: ot
-Variaciones: otitis media, otitis media, otitis media, otitis media, otitis media
+Variaciones: otitis media
 
 
 pancreatitis: f. Inflamación del páncreas, que puede ser aguda o crónica. El cuadro agudo cursa con dolor epigástrico, vómitos, contractura abdominal y aumento de amilasa y lipasa. La afección crónica puede evolucionar hacia la fibrosis pancreática, dando lugar a una insuficiencia pancreática exocrina, y favorecer la aparición de diabetes mellitus.
@@ -157,7 +157,7 @@ Forma invariable: periodont
 pulpitis: f. Inflamación de la pulpa dentaria; es sinónimo de endodontitis.
 Tipo: Infección
 Forma invariable: pulp
-Variaciones: pulpitis irreversible, pulpitis irreversible
+Variaciones: pulpitis irreversible
 
 
 schwannoma: m. Tumor benigno originado por las celulas de Schwann.

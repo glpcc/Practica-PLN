@@ -6,7 +6,7 @@ Forma invariable: adenocarcin
 apendicitis: Ver apendicitis aguda.
 Tipo: Infección
 Forma invariable: apendic
-Variaciones: apendicitis aguda, apendicitis aguda, apendicitis aguda
+Variaciones: apendicitis aguda
 
 
 bronquiolitis: f. Enfermedad respiratoria que afecta a las pequeñas vías aereas con inflamación de las mismas, produciendo obstrucción del flujo aereo.
@@ -121,7 +121,7 @@ Forma invariable: tensión
 hipotiroidismo: m. Disminución patológica de la función tiroidea, que puede estar motivada por causas diversas: falta de iodo en la dieta (como sucede en las zonas de bocio endemico), disminución de la hormona tirotropa de la hipófisis o su factor liberador hipotalámico, o bien por un desarrollo deficiente o una alteración tiroidea. Se produce una disminución del metabolismo, un enlentecimiento en la actividad corporal y psíquica, etc. &gt; Saber más sobre el hipotiroidismo
 Tipo: Alteración
 Forma invariable: tiroidismo
-Variaciones: hipotiroidismo subclínico, hipotiroidismo subclínico, hipotiroidismo subclínico
+Variaciones: hipotiroidismo subclínico
 
 
 hipoxia: f. Disminución de la disponibilidad de oxígeno por un órgano o de todo el organismo.
@@ -179,7 +179,7 @@ Forma invariable: sínt
 sinusitis: f. Inflamación de los senos óseos paranasales. En adultos el seno más frecuentemente afectado es el maxilar y en el niño las celdas etmoidales. Cuando hay varios senos afectados se habla de polisinusitis, y si están afectados todos, pansinusitis. Puede ser uni o bilateral. &gt; Saber más sobre la sinusitis
 Tipo: Infección
 Forma invariable: sinus
-Variaciones: sinusitis crónica, sinusitis crónica, sinusitis frontal
+Variaciones: sinusitis crónica, sinusitis frontal
 
 
 vasculitis: f. Inflamación de los vasos sanguíneos. Constituye un grupo de enfermedades que se caracterizan por la inflamación multifocal y la necrosis de los vasos sanguíneos, que puede tener diferentes formas de expresión, desde la forma local autolimitada hasta la forma difusa grave. Su incidencia es de veinticinco casos por cada millón de población. Los tratamientos con corticoides e inmunosupresores consiguen el control de la enfermedad en el 90% de los casos. Existen diversos marcadores para su diagnóstico, pero el más útil es la determinación de anticuerpos anticitoplasma del neutrófilo (ANCA). La clasificación de las vasculitis es muy diversa atendiendo a criterios clínicos, anatomopatológicos, etiopatogenicos y al tamaño del vaso afecto. La más reciente es la efectuada por un comite de expertos en Chapel Hill en 1993 (Carolina del Norte, EE.UU.) basada en criterios anatómicos de tamaño del vaso. Distingue la vasculitis de grandes vasos (arteritis de celulas gigantes, arteritis de Takayasu), de medianos vasos (poliarteritis nodosa clásica, enfermedad de Kawasaki) y de pequeños vasos (granulomatosis de Wegener, poliangeitis microscópica, síndrome de Churg-Strauss, púrpura de Sch&ouml;nlein-Henoch, vasculitis de la crioglobulinemia esencial y la vasculitis leucocitoclástica cutánea).

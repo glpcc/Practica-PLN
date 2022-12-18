@@ -6,7 +6,7 @@ Forma invariable: adenocarcin
 adenoma: m. Lesión tumoral benigna de naturaleza epitelial, con formación de estructuras glandulares reconocibles.
 Tipo: Cáncer
 Forma invariable: aden
-Variaciones: adenoma pleomorfo, adenoma pleomorfo, adenoma pleomorfo
+Variaciones: adenoma pleomorfo
 
 
 carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
@@ -28,7 +28,7 @@ Variaciones: conjuntivitis alérgica, conjuntivitis alérgicas
 endocarditis: f. Alteración inflamatoria del endocardio, que se caracteriza por la presencia de fenómenos exudativos y proliferativos en el endocardio valvular o, con menor frecuencia, en la superficie endocárdica de la cavidad cardiaca. Con gran frecuencia es debida a procesos infecciosos (endocarditis bacteriana o infecciosa), aunque en raras ocasiones se trata de endocarditis no infecciosas (endocarditis abacterianas) o de formas mixtas. Habitualmente cursa de forma aguda o subaguda, y la clínica depende de la magnitud de la destrucción valvular, de las posibles enfermedades concomitantes, del estado septico y del riesgo de embolismo.
 Tipo: Infección
 Forma invariable: endocard
-Variaciones: endocarditis infecciosa, endocarditis marántica, endocarditis trombótica, endocarditis trombótica
+Variaciones: endocarditis infecciosa, endocarditis marántica, endocarditis trombótica
 
 
 glaucoma: f. Proceso que se caracteriza por la presencia de una presión intraocular lo suficientemente elevada como para producir una atrofia progresiva del nervio óptico, que se manifiesta por defectos progresivos del campo visual. Ver glaucoma crónico simple. &gt; Saber más sobre el glaucoma
@@ -69,7 +69,7 @@ Forma invariable: xemia
 pancreatitis: f. Inflamación del páncreas, que puede ser aguda o crónica. El cuadro agudo cursa con dolor epigástrico, vómitos, contractura abdominal y aumento de amilasa y lipasa. La afección crónica puede evolucionar hacia la fibrosis pancreática, dando lugar a una insuficiencia pancreática exocrina, y favorecer la aparición de diabetes mellitus.
 Tipo: Infección
 Forma invariable: pancreat
-Variaciones: pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda, pancreatitis aguda
+Variaciones: pancreatitis aguda
 
 
 rabdomiosarcoma: f. Tumor maligno de las partes blandas derivado de las celulas mesenquimales primitivas con cierto grado de diferenciación muscular (ver rabdomioblasto). Se distinguen tres tipos: alveolar, embrionario y pleomórfico.

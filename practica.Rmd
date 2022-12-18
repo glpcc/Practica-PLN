@@ -215,6 +215,7 @@ for (i in 1:length(definiciones)){
   writeLines(lema, con1)
   variaciones = unlist(str_extract_all(enfermedades, paste(names(definiciones[i]), ".*")))
   if (length(variaciones) > 1){
+    variaciones = unique(variaciones)
     variaciones = paste("Variaciones:", paste(as.character(variaciones), collapse = ", "))
     writeLines(variaciones, con1)
   }

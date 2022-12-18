@@ -1,7 +1,7 @@
 carcinoma: m. Neoplasia maligna constituida por celulas epiteliales anáplasicas con capacidad metastásica.
 Tipo: Cáncer
 Forma invariable: carcin
-Variaciones: carcinoma colorrectal, carcinoma colorrectal, carcinoma colorrectal
+Variaciones: carcinoma colorrectal
 
 
 flebitis: f. Inflamación de una vena.
@@ -22,7 +22,7 @@ Forma invariable: glucemia
 hiperplasia: f. Aumento cuantitativo de un tejido por un incremento del número de celulas que conservan su normalidad anatómica y funcional. Tambien se denomina hipertrofia numerica o hipergenesis.
 Tipo: Alteración
 Forma invariable: plasia
-Variaciones: hiperplasia endometrial, hiperplasia endometrial, hiperplasia prostática
+Variaciones: hiperplasia endometrial, hiperplasia prostática
 
 
 hipertricosis: f. Aumento del vello.
