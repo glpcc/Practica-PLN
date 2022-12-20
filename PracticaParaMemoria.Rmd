@@ -206,3 +206,6 @@ for (i in 1:length(definiciones)){
 }
 close(con1)
 ```
+
+## Problemas o dificultades
+La primera dificultad que nos surgió fue el detectar si las palabras encontradas con los afijos indicados eran enfermedades, o simplemente otras palabras que contenían esos afijos. Nuestra primera solución
