@@ -60,7 +60,8 @@ for (texto in df$texto){
 }
 enfermedades = unique(enfermedades)
 enfermedades = sort(enfermedades)
-enfermedades
+head(enfermedades,5)
+tail(enfermedades,5)
 ```
 
 Posteriormente, separamos las palabras compuestas y nos quedamos con el núcleo del sintagma nominal (por ejemplo, de carcinoma ductal nos quedamos con carcinoma) para que el diccionario pueda buscarlos y los guardamos en la variable enfermedades2.
@@ -74,7 +75,8 @@ for (i in 1:length(enfermedades)){
 }
   }
 enfermedades2 = unique(tolower(enfermedades2))
-enfermedades2
+head(enfermedades2,5)
+tail(enfermedades2,5)
 ```
 
 Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:
@@ -106,7 +108,8 @@ for (i in 1:length(enfermedades2)){
 )
 }
 enfermedades3 = unique(enfermedades3)
-enfermedades3
+head(enfermedades3,5)
+tail(enfermedades3,5)
 ```
 
 Tras esto, creamos la forma invariable de las enfermedades eliminando los prefijos y sufijos que hemos buscado anteriormente. Para eliminarlos utilizamos la función ‘stri_replace_all_regex’.
