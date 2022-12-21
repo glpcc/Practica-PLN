@@ -8,6 +8,12 @@ date: "2022-11-26"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+\newpage
+
+## Introducción
+La práctica que realizamos en nuestro grupo consistía en crear un buscador de enfermedades. Dado una noticia, documento o corpus, el buscador debía detectar cada enfermedad que apareciera en base a sus afijos, y clasificarlas por su tipo: Infección, Dolor, Alteración o Cáncer.
+
+
 ## Inicializacion
 
 Para comenzar, se carga el paquete rjson y se verifica si ya está instalado. Si no está instalado, se instala. Esto se hace porque rjson es un paquete que se utiliza para leer y escribir archivos JSON en R. 
@@ -211,4 +217,8 @@ close(con1)
 ```
 
 ## Problemas o dificultades
-La primera dificultad que nos surgió fue el detectar si las palabras encontradas con los afijos indicados eran enfermedades, o simplemente otras palabras que contenían esos afijos. Nuestra primera solución
+La primera dificultad que nos surgió fue el detectar si las palabras encontradas con los afijos indicados eran enfermedades, o simplemente otras palabras que contenían esos afijos. Nuestra primera solución fue la búsqueda en el diccionario, y aunque los resultados fueron bastante buenos, seguía habiendo palabras como  *síntoma* que aparecían en el diccionario y contenía uno de los afijos. A pesar de ello, la gran mayoría de enfermedades se podían detectar de esta forma.
+
+Otra de las dificultades fue encontrar el sintagma nominal entero de cada enfermedad. Intentamos usar funciones que buscaran sintagmas nominales, pero ninguna nos dio un resultado convincente. Por tanto, aplicando la librería udpipe  conseguimos detectar los modificadores (si es que los había) después de cada enfermedad. Así, enfermedades como *carcinoma ductal* pudieron ser detectadas de forma completa y no solo con la primera palabra.
+
+## Reparto del trabajo
