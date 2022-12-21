@@ -1,12 +1,31 @@
 ---
-title: "Memoria PLN"
+title: \Huge Memoria PLN
 output: pdf_document
 date: "2022-11-26"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+# save the built-in output hook
+hook_output <- knitr::knit_hooks$get("output")
+
+# set a new output hook to truncate text output
+knitr::knit_hooks$set(output = function(x, options) {
+  if (!is.null(n <- 20)) {
+    x <- xfun::split_lines(x)
+    if (length(x) > n) {
+      # truncate the output
+      x <- c(head(x, 5), "\n...\n",tail(x,6))
+    }
+    x <- paste(x, collapse = "\n")
+    x <- xfun::split_lines(x)
+    if (any(nchar(x) > 100)) x = strwrap(x, width = 100)
+    x <- paste(x, collapse = "\n")
+  }
+  hook_output(x, options)
+})
 ```
+
 
 \newpage
 
@@ -28,7 +47,7 @@ library('rjson');
 Luego, se lee un archivo JSON llamado 'reduced_article_list2.json' y se crea un dataframe llamado 'df' con cuatro columnas: 'ids', 'titulos', 'ano', y 'texto'. El archivo JSON es un archivo de texto que contiene información estructurada en un formato específico, y rjson se utiliza para leer este archivo y convertirlo en un dataframe de R.
 
 ```{r cargar_json}
-f = fromJSON(file = 'reduced_article_list2.json');
+f = fromJSON(file = 'datos/reduced_article_list2.json');
 ids = unlist(lapply(f$articles, function (x) x$id ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,texto)
@@ -42,7 +61,7 @@ library(udpipe)
 #Descarga "spanish-ancora-ud-2.5-191206.udpipe"
 udmodel_es<-udpipe_load_model(file = 'spanish-ancora-ud-2.5-191206.udpipe');
 ```
-
+\newpage
 Luego, se utiliza el modelo de lenguaje cargado para analizar el texto de cada artículo en 'df$texto' en busca de palabras que terminen en "itis", "oma", "algia", o empiecen con "hipo" o "hiper". Para hacer esto, se recorre el dataframe 'df' y se utiliza la función 'udpipe_annotate' del paquete udpipe para analizar el texto de cada artículo. Esta función toma el texto como entrada y devuelve una serie de información sobre cada palabra del texto, como su categoría gramatical (por ejemplo, sustantivo, verbo, etc.) y su relación con las demás palabras del texto. Luego, se buscan las palabras que cumplen con las condiciones mencionadas y se añaden a la lista 'enfermedades'.
 
 ```{r txt, warning=FALSE,message=FALSE}
@@ -51,14 +70,14 @@ library(stringr)
 enfermedades = c();
 for (texto in df$texto){
   texto_analizado = as.data.frame(udpipe_annotate(udmodel_es,texto));
-  posibles_enfermedades = str_detect(texto_analizado$token,regex('.*?itis$|.*?oma$|.*?algia$|^hipo.*|^hiper.*'))
+  posibles_enfermedades = str_detect(texto_analizado$token,
+                                     regex('.*?itis$|.*?oma$|.*?algia$|^hipo.*|^hiper.*'))
   for (j in 1:nrow(texto_analizado)){
     if (texto_analizado$upos[[j]] == 'NOUN' & posibles_enfermedades[[j]]){
       if (texto_analizado$dep_rel[[j+1]] == 'amod'){
-        # print(paste(texto_analizado$token[[j]], texto_analizado$token[[j+1]],sep = " "))
-        enfermedades = c(enfermedades,paste(texto_analizado$token[[j]], texto_analizado$token[[j+1]],sep = " ") )
+        enfermedades = c(enfermedades,paste(texto_analizado$token[[j]], 
+                                            texto_analizado$token[[j+1]],sep = " ") )
       }else{
-        # print(texto_analizado$token[[j]])
         enfermedades = c(enfermedades,texto_analizado$token[[j]])
       }
     }
@@ -66,8 +85,7 @@ for (texto in df$texto){
 }
 enfermedades = unique(enfermedades)
 enfermedades = sort(enfermedades)
-head(enfermedades,5)
-tail(enfermedades,5)
+enfermedades
 ```
 
 Posteriormente, separamos las palabras compuestas y nos quedamos con el núcleo del sintagma nominal (por ejemplo, de carcinoma ductal nos quedamos con carcinoma) para que el diccionario pueda buscarlos y los guardamos en la variable enfermedades2.
@@ -81,8 +99,7 @@ for (i in 1:length(enfermedades)){
 }
   }
 enfermedades2 = unique(tolower(enfermedades2))
-head(enfermedades2,5)
-tail(enfermedades2,5)
+enfermedades2
 ```
 
 Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:
@@ -99,7 +116,8 @@ enfermedades3 = c()
 for (i in 1:length(enfermedades2)){
   url = "https://www.cun.es/diccionario-medico/terminos/"
   urlOK = paste(url, enfermedades2[i])
-  urlOK = stri_replace_all_regex(urlOK, c(" ", "á", "é", "í", "ó", "ú"), c("", "a", "e", "i", "o", "u"), vectorize_all = FALSE)
+  urlOK = stri_replace_all_regex(urlOK, c(" ", "á", "é", "í", "ó", "ú"),
+                                 c("", "a", "e", "i", "o", "u"), vectorize_all = FALSE)
   urls[i] = urlOK
   tryCatch(
   {
@@ -114,14 +132,14 @@ for (i in 1:length(enfermedades2)){
 )
 }
 enfermedades3 = unique(enfermedades3)
-head(enfermedades3,5)
-tail(enfermedades3,5)
+enfermedades3
 ```
 
 Tras esto, creamos la forma invariable de las enfermedades eliminando los prefijos y sufijos que hemos buscado anteriormente. Para eliminarlos utilizamos la función ‘stri_replace_all_regex’.
 
 ```{r lema}
-forma_invariable <- stri_replace_all_regex(enfermedades3, "hipo|hiper|itis|algia|algia|oma","")
+forma_invariable <- stri_replace_all_regex(enfermedades3, 
+                                           "hipo|hiper|itis|algia|algia|oma","")
 ```
 
 Terminado el proceso de lematización, nos planteamos generar un documento en el que aparecería la definición de cada enfermedad encontrada. En este punto contamos con gran parte de la información necesaria.
@@ -214,6 +232,11 @@ for (i in 1:length(definiciones)){
   writeLines("\n", con1)
 }
 close(con1)
+```
+## Ejemplo resultado
+```{r ejemplo_resultado}
+lines = readLines("Definiciones.txt")
+lines[lines != ""]
 ```
 
 ## Problemas o dificultades
