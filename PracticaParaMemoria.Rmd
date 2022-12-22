@@ -1,7 +1,14 @@
 ---
-title: \Huge Memoria PLN
+title: \fontsize{30pt}{30pt}\selectfont Práctica PLN
+documentclass: report
+geometry: margin=1in
+author: 
+  - Javier Pérez Vargas, javier.perez.vargas@alumnos.upm.es
+  - Gonzalo Lope Carrasco, g.lope@alumnos.upm.es
+  - Mario Ruiz Vazquett, mario.ruiz@alumnos.upm.es
+  - Carlos Ramos Nieto, carlos.ramos.nieto@alumnos.upm.es
+date: 22-12-2022
 output: pdf_document
-date: "2022-11-26"
 ---
 
 ```{r setup, include=FALSE}
@@ -35,7 +42,7 @@ La práctica que realizamos en nuestro grupo consistía en crear un buscador de 
 
 ## Inicializacion
 
-Para comenzar, se carga el paquete rjson y se verifica si ya está instalado. Si no está instalado, se instala. Esto se hace porque rjson es un paquete que se utiliza para leer y escribir archivos JSON en R. 
+Para comenzar, se carga el paquete rjson y se verifica si ya está instalado. Si no está instalado, se instala. Esto se hace porque rjson es un paquete que se utiliza para leer y escribir archivos JSON en R. Lo utilizaremos para extraer el texto de ejemplo con el que trabajaremos.
 
 ```{r instalar_rjson}
 if (! require('rjson')){
@@ -44,10 +51,10 @@ if (! require('rjson')){
 library('rjson');
 ```
 
-Luego, se lee un archivo JSON llamado 'reduced_article_list2.json' y se crea un dataframe llamado 'df' con cuatro columnas: 'ids', 'titulos', 'ano', y 'texto'. El archivo JSON es un archivo de texto que contiene información estructurada en un formato específico, y rjson se utiliza para leer este archivo y convertirlo en un dataframe de R.
+Luego, se lee el archivo JSON y se crea un dataframe llamado 'df' con dos columnas: 'ids' y 'texto'. El archivo JSON es un archivo de texto que contiene información estructurada en un formato específico, y rjson se utiliza para leer este archivo y convertirlo en un dataframe de R.
 
 ```{r cargar_json}
-f = fromJSON(file = 'datos/reduced_article_list2.json');
+f = fromJSON(file = 'datos/reduced_article_list3.json');
 ids = unlist(lapply(f$articles, function (x) x$id ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,texto)
@@ -58,11 +65,11 @@ A continuación, se carga el modelo de lenguaje 'spanish-ancora-ud-2.5-191206.ud
 ```{r, carga, warning=FALSE,message=FALSE}
 library(udpipe)
 # udpipe_download_model(language = "spanish-ancora") #"spanish-ancora" or "spanish-gsd"
-#Descarga "spanish-ancora-ud-2.5-191206.udpipe"
+# Descarga "spanish-ancora-ud-2.5-191206.udpipe"
 udmodel_es<-udpipe_load_model(file = 'spanish-ancora-ud-2.5-191206.udpipe');
 ```
 \newpage
-Luego, se utiliza el modelo de lenguaje cargado para analizar el texto de cada artículo en 'df$texto' en busca de palabras que terminen en "itis", "oma", "algia", o empiecen con "hipo" o "hiper". Para hacer esto, se recorre el dataframe 'df' y se utiliza la función 'udpipe_annotate' del paquete udpipe para analizar el texto de cada artículo. Esta función toma el texto como entrada y devuelve una serie de información sobre cada palabra del texto, como su categoría gramatical (por ejemplo, sustantivo, verbo, etc.) y su relación con las demás palabras del texto. Luego, se buscan las palabras que cumplen con las condiciones mencionadas y se añaden a la lista 'enfermedades'.
+Luego, se utiliza el modelo de lenguaje cargado para analizar el texto de cada artículo en 'df$texto' en busca de palabras que terminen en "itis", "oma", "algia", o empiecen con "hipo" o "hiper". Buscaremos los sintagmas nominales enteros viendo el tipo de palabra que sigue a las encontradas. Para hacer esto, se recorre el dataframe 'df' y se utiliza la función 'udpipe_annotate' del paquete udpipe para analizar el texto de cada artículo. Esta función toma el texto como entrada y devuelve una serie de información sobre cada palabra del texto, como su categoría gramatical (por ejemplo, sustantivo, verbo, etc.) y su relación con las demás palabras del texto. Luego, se buscan las palabras que cumplen con las condiciones mencionadas y se añaden a la lista 'enfermedades'.
 
 ```{r txt, warning=FALSE,message=FALSE}
 # Modo texto a texto
@@ -135,7 +142,7 @@ enfermedades3 = unique(enfermedades3)
 enfermedades3
 ```
 
-Tras esto, creamos la forma invariable de las enfermedades eliminando los prefijos y sufijos que hemos buscado anteriormente. Para eliminarlos utilizamos la función ‘stri_replace_all_regex’.
+Tras esto, creamos la forma invariable de las enfermedades eliminando los prefijos y sufijos que hemos buscado anteriormente. Para eliminarlos utilizamos la función _stri_replace_all_regex_.
 
 ```{r lema}
 forma_invariable <- stri_replace_all_regex(enfermedades3, 
@@ -187,10 +194,10 @@ for (i in 1:length(valid_urls)){
 names(definiciones) = enfermedades3
 ```
 
-Llegados a este punto contamos con 3 vectores:
-enfermedades3 que contiene todas las enfermedades.
-valid_urls con las url de consulta del diccionario.
-definiciones que contiene las definiciones en cadenas de texto.
+Llegados a este punto contamos con 3 vectores:\newline 
+- enfermedades3, que contiene todas las enfermedades. \newline
+- valid_urls, con las url de consulta del diccionario.\newline
+- definiciones, que contiene las definiciones en cadenas de texto.\newline
 
 Claramente, tienen la misma longitud y, observamos que, dada una posición i dentro del rango de los vectores, enfermedades3[i] y definiciones[i] harán alusión al mismo concepto, por lo que le damos el nombre de la enfermedad a cada definición (names(definiciones) = enfermedades3).
 
@@ -245,3 +252,11 @@ La primera dificultad que nos surgió fue el detectar si las palabras encontrada
 Otra de las dificultades fue encontrar el sintagma nominal entero de cada enfermedad. Intentamos usar funciones que buscaran sintagmas nominales, pero ninguna nos dio un resultado convincente. Por tanto, aplicando la librería udpipe  conseguimos detectar los modificadores (si es que los había) después de cada enfermedad. Así, enfermedades como *carcinoma ductal* pudieron ser detectadas de forma completa y no solo con la primera palabra.
 
 ## Reparto del trabajo
+
+- Gonzalo Lope:
+\newline
+- Javier Pérez:
+\newline
+- Mario Ruiz:
+\newline
+- Carlos Ramos:
