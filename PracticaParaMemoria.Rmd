@@ -1,5 +1,6 @@
 ---
 title: \fontsize{30pt}{30pt}\selectfont Práctica PLN
+subtitle: "Grupo 06"
 documentclass: report
 geometry: margin=1in
 author: 
@@ -109,9 +110,8 @@ enfermedades2 = unique(tolower(enfermedades2))
 enfermedades2
 ```
 
-Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:
-
-                  **https://www.cun.es/diccionario-medico/terminos/{CONCEPTO}.**
+Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:  
+                                                **https://www.cun.es/diccionario-medico/terminos/{CONCEPTO}**
                   
 Las que encontramos en dicho diccionario las añadimos a la variable enfermedades3. Las que no se encuentren, se asume que no son enfermedades y las desechamos. Nos quedaremos únicamente con aquellas que aparezcan en el diccionario médico.
 
