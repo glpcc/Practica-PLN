@@ -1,8 +1,8 @@
 ---
 title: \fontsize{30pt}{30pt}\selectfont Práctica PLN
-subtitle: "Grupo 06"
 documentclass: report
 geometry: margin=1in
+subtitle: "Grupo 6"
 author: 
   - Javier Pérez Vargas, javier.perez.vargas@alumnos.upm.es
   - Gonzalo Lope Carrasco, g.lope@alumnos.upm.es
@@ -41,7 +41,7 @@ knitr::knit_hooks$set(output = function(x, options) {
 La práctica que realizamos en nuestro grupo consistía en crear un buscador de enfermedades. Dado una noticia, documento o corpus, el buscador debía detectar cada enfermedad que apareciera en base a sus afijos, y clasificarlas por su tipo: Infección, Dolor, Alteración o Cáncer.
 
 
-## Inicializacion
+## Proceso de ejecución
 
 Para comenzar, se carga el paquete rjson y se verifica si ya está instalado. Si no está instalado, se instala. Esto se hace porque rjson es un paquete que se utiliza para leer y escribir archivos JSON en R. Lo utilizaremos para extraer el texto de ejemplo con el que trabajaremos.
 
@@ -55,7 +55,7 @@ library('rjson');
 Luego, se lee el archivo JSON y se crea un dataframe llamado 'df' con dos columnas: 'ids' y 'texto'. El archivo JSON es un archivo de texto que contiene información estructurada en un formato específico, y rjson se utiliza para leer este archivo y convertirlo en un dataframe de R.
 
 ```{r cargar_json}
-f = fromJSON(file = 'datos/reduced_article_list3.json');
+f = fromJSON(file = 'reduced_article_list3.json');
 ids = unlist(lapply(f$articles, function (x) x$id ));
 texto = unlist(lapply(f$articles, function (x) x$abstractText ));
 df = data.frame(ids,texto)
@@ -69,7 +69,7 @@ library(udpipe)
 # Descarga "spanish-ancora-ud-2.5-191206.udpipe"
 udmodel_es<-udpipe_load_model(file = 'spanish-ancora-ud-2.5-191206.udpipe');
 ```
-\newpage
+
 Luego, se utiliza el modelo de lenguaje cargado para analizar el texto de cada artículo en 'df$texto' en busca de palabras que terminen en "itis", "oma", "algia", o empiecen con "hipo" o "hiper". Buscaremos los sintagmas nominales enteros viendo el tipo de palabra que sigue a las encontradas. Para hacer esto, se recorre el dataframe 'df' y se utiliza la función 'udpipe_annotate' del paquete udpipe para analizar el texto de cada artículo. Esta función toma el texto como entrada y devuelve una serie de información sobre cada palabra del texto, como su categoría gramatical (por ejemplo, sustantivo, verbo, etc.) y su relación con las demás palabras del texto. Luego, se buscan las palabras que cumplen con las condiciones mencionadas y se añaden a la lista 'enfermedades'.
 
 ```{r txt, warning=FALSE,message=FALSE}
@@ -110,8 +110,9 @@ enfermedades2 = unique(tolower(enfermedades2))
 enfermedades2
 ```
 
-Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:  
-                                                **https://www.cun.es/diccionario-medico/terminos/{CONCEPTO}**
+Una vez creada esta variable, buscamos todas las enfermedades en el diccionario médico con el siguiente formato:
+
+                  https://www.cun.es/diccionario-medico/terminos/{CONCEPTO}
                   
 Las que encontramos en dicho diccionario las añadimos a la variable enfermedades3. Las que no se encuentren, se asume que no son enfermedades y las desechamos. Nos quedaremos únicamente con aquellas que aparezcan en el diccionario médico.
 
@@ -254,9 +255,17 @@ Otra de las dificultades fue encontrar el sintagma nominal entero de cada enferm
 ## Reparto del trabajo
 
 - Gonzalo Lope:
-\newline
+Se ha encargado de conseguir todos los sintagmas nominales que son enfermedades y ha realizado la memoria en conjunto con Carlos.
+
 - Javier Pérez:
-\newline
+Se ha hecho cargo de la comprobación de que las enfermedades aparecen en el diccionario y también se encargó de la creación del documento txt con los resultados.
+
 - Mario Ruiz:
-\newline
+Se ha encargado de realizar todas las búsquedas mediante regex de las posibles enfermedades y ha conseguido la forma invariable de todas las enfermedades.
+
 - Carlos Ramos:
+Se ha hecho cargo de recoger las definiciones api de las enfermedades del diccionario y ha realizado la memoria en conjunto con Gonzalo.
+
+
+Es destacable como todos nos hemos involucrado en solucionar errores que nos hemos ido encontrando en el proceso de la realización del trabajo y como todos no hemos tenido problemas en ayudarnos siempre que lo hemos necesitado.
+
